@@ -15,6 +15,7 @@ void main() async {
 }
 
 final themeModeProvider = StateProvider<ThemeData>((ref) => Themes.greenDarkTheme);
+final themeNumber = StateProvider<int>((ref)=> 1);
 
 class MyApp extends ConsumerStatefulWidget {
   final int themeNumber;
