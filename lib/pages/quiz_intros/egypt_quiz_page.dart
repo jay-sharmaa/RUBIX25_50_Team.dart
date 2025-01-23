@@ -18,18 +18,16 @@ class _EgyptTriviaPageState extends State<EgyptTriviaPage> {
 
   void _startQuiz() {
     setState(() {
-      _isPressed = true; // Button is pressed, change color
+      _isPressed = true;
     });
 
-    // Simulate the button color change and flash
     Future.delayed(Duration(seconds: 1), () {
-      // After animation completes, navigate to EgyptTrivia
       Navigator.pushReplacement(
         context,
         PageRouteBuilder(
           pageBuilder: (context, animation, secondaryAnimation) => EgyptQuiz(),
           transitionsBuilder: (context, animation, secondaryAnimation, child) {
-            const begin = Offset(1.0, 0.0); // Slide from right to left
+            const begin = Offset(1.0, 0.0);
             const end = Offset.zero;
             const curve = Curves.easeInOut;
 
@@ -50,7 +48,6 @@ class _EgyptTriviaPageState extends State<EgyptTriviaPage> {
       body: SingleChildScrollView(
         child: Stack(
           children: [
-            // Background image
             Container(
               height: MediaQuery.of(context).size.height,
               decoration: BoxDecoration(

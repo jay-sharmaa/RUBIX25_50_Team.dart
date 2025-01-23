@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:rubix_time_machine/pages/forum_page.dart';
 import 'package:rubix_time_machine/pages/home.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:rubix_time_machine/pages/timeline_page.dart';
+import 'pages/timeline_page.dart';
 import 'utils/colors.dart';
 
 void main() async {
@@ -14,7 +17,9 @@ void main() async {
   runApp(ProviderScope(child: MyApp(themeNumber: themeNumber)));
 }
 
-final themeModeProvider = StateProvider<ThemeData>((ref) => Themes.greenDarkTheme);
+final themeModeProvider =
+    StateProvider<ThemeData>((ref) => Themes.greenDarkTheme);
+final themeNumber = StateProvider<int>((ref) => 1);
 
 class MyApp extends ConsumerStatefulWidget {
   final int themeNumber;
@@ -52,34 +57,34 @@ class _MyAppState extends ConsumerState<MyApp> {
 
   @override
   Widget build(BuildContext context) {
+    List<Widget> Pages = [
+      Home(
+        1,
+        selected_page: selected_index,
+      ),
+      ForumPage(selected_page: selected_index, themeNumber: 1),
+      TimelinePage(themeNumber: 1),
+    ];
     final themeMode = ref.watch(themeModeProvider);
     return MaterialApp(
       theme: themeMode,
       home: Scaffold(
-        body: Home(widget.themeNumber),
+        body: Pages[selected_index],
         bottomNavigationBar: BottomNavigationBar(
-          selectedItemColor: Colors.black,
-          onTap: (value){
-            setState(() {
-              selected_index = value;
-            });
-          },
-          currentIndex: selected_index,
+            selectedItemColor: Colors.black,
+            onTap: (value) {
+              setState(() {
+                selected_index = value;
+              });
+            },
+            currentIndex: selected_index,
             items: const [
+              BottomNavigationBarItem(label: "Home", icon: Icon(Icons.home)),
               BottomNavigationBarItem(
-                  label: "Home",
-                  icon: Icon(Icons.home)
-              ),
+                  label: "Discussion", icon: Icon(Icons.chat)),
               BottomNavigationBarItem(
-                  label: "Search",
-                  icon: Icon(Icons.search)
-              ),
-              BottomNavigationBarItem(
-                  label: "Profile",
-                  icon: Icon(Icons.person)
-              ),
-            ]
-        ),
+                  label: "Profile", icon: Icon(Icons.person)),
+            ]),
       ),
     );
   }
