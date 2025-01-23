@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:rubix_time_machine/pages/forum_page.dart';
 import 'package:rubix_time_machine/pages/home.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'pages/timeline_page.dart';
@@ -54,11 +55,15 @@ class _MyAppState extends ConsumerState<MyApp> {
 
   @override
   Widget build(BuildContext context) {
+    List<Widget> Pages = [
+      Home(1, selected_page: selected_index,),
+      ForumPage(selected_page: selected_index, themeNumber: 1)
+    ];
     final themeMode = ref.watch(themeModeProvider);
     return MaterialApp(
       theme: themeMode,
       home: Scaffold(
-        body: const TimelinePage(themeNumber: 1),
+        body: Pages[selected_index],
         bottomNavigationBar: BottomNavigationBar(
           selectedItemColor: Colors.black,
           onTap: (value){
@@ -73,8 +78,8 @@ class _MyAppState extends ConsumerState<MyApp> {
                   icon: Icon(Icons.home)
               ),
               BottomNavigationBarItem(
-                  label: "Search",
-                  icon: Icon(Icons.search)
+                  label: "Discussion",
+                  icon: Icon(Icons.chat)
               ),
               BottomNavigationBarItem(
                   label: "Profile",

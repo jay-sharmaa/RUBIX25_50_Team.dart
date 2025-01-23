@@ -6,7 +6,8 @@ const String themeKey = 'theme';
 
 class Home extends ConsumerWidget {
   final int themeNumber;
-  const Home(this.themeNumber, {super.key});
+  final int selected_page;
+  const Home(this.themeNumber, {required this.selected_page, super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
