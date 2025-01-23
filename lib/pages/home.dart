@@ -32,7 +32,7 @@ class Home extends ConsumerWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
-
+                          
                         ],
                       ),
                       SizedBox(
@@ -59,14 +59,46 @@ class Home extends ConsumerWidget {
                     const Text("Jump where you left", style: TextStyle(fontSize: 20),),
                     IconButton(onPressed: (){
 
-                    }, icon: const Icon(Icons.menu))
+                    }, icon: const Icon(Icons.menu)),
+                    
                   ],
                 ),
             ),
             Divider(height: 5,),
+            Text("data"),
+            Text("data"),
+            Text("data"),
+            Text("data"),
+            Text("data"),
+            Text("data"),
+            Text("data"),
+            Text("data"),
+            Text("data"),
+            Text("data"),
+            Text("data"),
+            Text("data"),
+            Text("data"),
+            Text("data"),
+            Text("data"),
+            Text("data"),
+            Text("data"),
+            Text("data"),
+            Text("data"),
+            Text("data"),
+            Text("data"),
+            Text("data"),
+            Text("data"),
+            Text("data"),
+            Text("data"),
+            Text("data"),
+            Text("data"),
           ])
         ],
       ),
     );
+  }
+
+  Widget personTitle(){
+    return 
   }
 }
