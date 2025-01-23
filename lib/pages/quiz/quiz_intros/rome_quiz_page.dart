@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:rubix_time_machine/pages/quiz_pages/egypt_quiz.dart';
+import 'package:rubix_time_machine/pages/quiz/quiz_lvl_intro_outro/rome_lvl_intro.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: EgyptTriviaPage(),
+    home: RomeTriviaPage(),
   ));
 }
 
-class EgyptTriviaPage extends StatefulWidget {
+class RomeTriviaPage extends StatefulWidget {
   @override
-  _EgyptTriviaPageState createState() => _EgyptTriviaPageState();
+  _RomeTriviaPageState createState() => _RomeTriviaPageState();
 }
 
-class _EgyptTriviaPageState extends State<EgyptTriviaPage> {
+class _RomeTriviaPageState extends State<RomeTriviaPage> {
   bool _isPressed = false;
 
   void _startQuiz() {
@@ -25,7 +25,7 @@ class _EgyptTriviaPageState extends State<EgyptTriviaPage> {
       Navigator.pushReplacement(
         context,
         PageRouteBuilder(
-          pageBuilder: (context, animation, secondaryAnimation) => EgyptQuiz(),
+          pageBuilder: (context, animation, secondaryAnimation) => Level1Page(),
           transitionsBuilder: (context, animation, secondaryAnimation, child) {
             const begin = Offset(1.0, 0.0);
             const end = Offset.zero;
@@ -52,7 +52,7 @@ class _EgyptTriviaPageState extends State<EgyptTriviaPage> {
               height: MediaQuery.of(context).size.height,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/ancient_egypt_quiz_img.jpg'),
+                  image: AssetImage('assets/ancient_rome_quiz_img.jpg'),
                   fit: BoxFit.cover,
                   alignment: Alignment.topCenter,
                 ),
@@ -103,7 +103,7 @@ class _EgyptTriviaPageState extends State<EgyptTriviaPage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        "EGYPT",
+                        "ROME",
                         style: GoogleFonts.cinzel(
                           fontSize: 60,
                           fontWeight: FontWeight.bold,
@@ -115,8 +115,8 @@ class _EgyptTriviaPageState extends State<EgyptTriviaPage> {
 
                   SizedBox(height: 15),
                   Text(
-                    "Test your knowledge with the ANCIENT EGYPT trivia!\n\n"
-                    "Are you ready to face the Wisdom of the Nile?",
+                    "Test your knowledge with the ANCIENT ROME trivia!\n\n"
+                    "Can you conquer History like Julius Caesar?",
                     textAlign: TextAlign.center,
                     style: GoogleFonts.lato(
                       fontSize: 16,
@@ -143,9 +143,9 @@ class _EgyptTriviaPageState extends State<EgyptTriviaPage> {
                         ),
                         SizedBox(height: 10),
                         Text(
-                          "- This quiz contains 10 questions.\n"
-                          "- Earn 1 point for each correct answer.\n"
-                          "- Enjoy!",
+                          "- This trivia contains 5 levels of increasing difficulty.\n\n"
+                          "- Passing each level earns you a Title.\n\n"
+                          "- Rise from a humble learner to becoming the Master Scholar in the great halls of history!",
                           style: GoogleFonts.lato(
                             fontSize: 16,
                           ),
