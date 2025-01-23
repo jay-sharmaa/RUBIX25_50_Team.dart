@@ -115,6 +115,10 @@ flutter:
     - assets/ramesses.jpg
     - assets/ashoka.jpg
     - assets/ancient.jpg
+    - assets/fall_of_rome.png
+    - assets/greece.png
+    - assets/egypt_thumbnail.png
+    - assets/youtube_png.webp
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
