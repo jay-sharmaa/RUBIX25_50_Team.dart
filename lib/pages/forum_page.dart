@@ -52,7 +52,7 @@ class _ForumPageState extends ConsumerState<ForumPage> {
         children: [
           Expanded(
             child: ListView.builder(
-              reverse: true, // Shows latest messages at the bottom
+              reverse: true,
               itemBuilder: (context, index) {
                 return textBubble(chats[chats.length - 1 - index]);
               },

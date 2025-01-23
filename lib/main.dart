@@ -57,7 +57,8 @@ class _MyAppState extends ConsumerState<MyApp> {
   Widget build(BuildContext context) {
     List<Widget> Pages = [
       Home(1, selected_page: selected_index,),
-      ForumPage(selected_page: selected_index, themeNumber: 1)
+      ForumPage(selected_page: selected_index, themeNumber: 1),
+      TimelinePage(themeNumber: 1)
     ];
     final themeMode = ref.watch(themeModeProvider);
     return MaterialApp(
