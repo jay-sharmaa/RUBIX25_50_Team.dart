@@ -3,6 +3,7 @@ import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:rubix_time_machine/pages/home.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'pages/timeline_page.dart';
 import 'utils/colors.dart';
 
 void main() async {
@@ -57,7 +58,7 @@ class _MyAppState extends ConsumerState<MyApp> {
     return MaterialApp(
       theme: themeMode,
       home: Scaffold(
-        body: Home(widget.themeNumber),
+        body: const TimelinePage(themeNumber: 1),
         bottomNavigationBar: BottomNavigationBar(
           selectedItemColor: Colors.black,
           onTap: (value){

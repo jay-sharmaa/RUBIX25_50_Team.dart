@@ -42,6 +42,7 @@ dependencies:
   flutter_native_splash: ^2.4.1
   timelines_plus: ^1.0.6
   pair: 
+  url_launcher: 
 
 dev_dependencies:
   flutter_test:
@@ -88,6 +89,20 @@ flutter:
     - assets/ancient_rome_quiz_img.jpeg
     - assets/ancient_india_quiz_img.jpg
     - assets/ancient_egypt_quiz_img.jpg
+    - assets/Reign_of_Tutankhamun.jpg 
+    - assets/Reign_of_Samudragupta.png 
+    - assets/Reign_of_Aurangzeb.jpg 
+    - assets/Ramses_II_British_Museum.jpg 
+    - assets/Mughal-Empire-during-Akbar-Period.jpg 
+    - assets/Map_of_Rome_and_Carthage.png 
+    - assets/greece_750-550BC.png 
+    - assets/Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg 
+    - assets/Division_of_rome_east_west.jpg 
+    - assets/ashoka_map.png
+    - assets/western_romw_fell.png
+    - assets/499-479Greece-persianWar.jpg 
+    - assets/334-326BCAlexander.jpg 
+    - assets/214-205BCMacedonianWar.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
