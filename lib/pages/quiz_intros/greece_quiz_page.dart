@@ -1,33 +1,34 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:rubix_time_machine/pages/quiz_pages/greece_quiz.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: TriviaPage(),
+    home: GreeceTriviaPage(),
   ));
 }
 
-class TriviaPage extends StatefulWidget {
+class GreeceTriviaPage extends StatefulWidget {
   @override
-  _TriviaPageState createState() => _TriviaPageState();
+  _GreeceTriviaPageState createState() => _GreeceTriviaPageState();
 }
 
-class _TriviaPageState extends State<TriviaPage> {
+class _GreeceTriviaPageState extends State<GreeceTriviaPage> {
   bool _isPressed = false;
 
   void _startQuiz() {
     setState(() {
-      _isPressed = true; // Button is pressed, change color
+      _isPressed = true; // Button is pressed,change colour
     });
 
-    // Simulate the button color change and flash
+    // Simulate the button colour change and flash
     Future.delayed(Duration(seconds: 1), () {
       // After animation completes, navigate to EgyptTrivia
       Navigator.push(
         context,
         PageRouteBuilder(
           pageBuilder: (context, animation, secondaryAnimation) =>
-              IndiaTrivia(),
+              GreeceTrivia(),
           transitionsBuilder: (context, animation, secondaryAnimation, child) {
             const begin = Offset(1.0, 0.0); // Slide from right to left
             const end = Offset.zero;
@@ -55,7 +56,7 @@ class _TriviaPageState extends State<TriviaPage> {
               height: MediaQuery.of(context).size.height,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/ancient_india_quiz_img.jpg'),
+                  image: AssetImage('assets/ancient_greece_quiz_img.jpg'),
                   fit: BoxFit.cover,
                   alignment: Alignment.topCenter,
                 ),
@@ -106,7 +107,7 @@ class _TriviaPageState extends State<TriviaPage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        "INDIA",
+                        "GREECE",
                         style: GoogleFonts.cinzel(
                           fontSize: 60,
                           fontWeight: FontWeight.bold,
@@ -118,8 +119,8 @@ class _TriviaPageState extends State<TriviaPage> {
 
                   SizedBox(height: 15),
                   Text(
-                    "Test your knowledge with the ANCIENT INDIA trivia!\n\n"
-                    "Are you wise enough to answer like a Vedic scholar?",
+                    "Test your knowledge with the ANCIENT GREECE trivia!\n\n"
+                    "Are you sharp enough to match the Great Philosophers of Ancient Greece?",
                     textAlign: TextAlign.center,
                     style: GoogleFonts.lato(
                       fontSize: 16,
@@ -167,13 +168,13 @@ class _TriviaPageState extends State<TriviaPage> {
                       alignment: Alignment.center,
                       decoration: BoxDecoration(
                         color: _isPressed
-                            ? Color.fromARGB(255, 242, 206, 162)
+                            ? Color.fromARGB(255, 64, 33, 26)
                             : Colors.green,
                         borderRadius: BorderRadius.circular(12.0),
                         boxShadow: _isPressed
                             ? [
                                 BoxShadow(
-                                  color: Color.fromARGB(255, 242, 206, 162),
+                                  color: const Color.fromARGB(255, 64, 33, 26),
                                   blurRadius: 8.0,
                                   spreadRadius: 4.0,
                                 ),
@@ -195,17 +196,6 @@ class _TriviaPageState extends State<TriviaPage> {
             ),
           ],
         ),
-      ),
-    );
-  }
-}
-
-class IndiaTrivia extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text("India Trivia Page"),
       ),
     );
   }

@@ -86,6 +86,10 @@ flutter:
     - assets/ancient_rome_quiz_img.jpeg
     - assets/ancient_india_quiz_img.jpg
     - assets/ancient_egypt_quiz_img.jpg
+    - assets/egypt_lvl1_img.jpg
+    - assets/egypt_lvl2_img.jpg
+    - assets/egypt_lvl3_img.jpg
+    - assets/egypt_lvl4_img.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
