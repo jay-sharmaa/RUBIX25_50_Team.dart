@@ -185,3 +185,10 @@ List<Uri> ancientIndiaUri = [
   Uri.parse("https://en.wikipedia.org/wiki/Partition_of_India"),
   Uri.parse("https://en.wikipedia.org/wiki/Constitution_of_India")
 ];
+
+const List<Pair<String, String>> quotes = [
+     Pair<String, String>('assets/plato.png', 'The first and greatest victory is to conquer yourself; to be conquered by yourself is of all things most shameful and vile'),
+     Pair<String, String>('assets/ashoka.jpg', 'Live every act fully, as if it were your last.'),
+     Pair<String, String>('assets/ceasor.png', 'I found Rome a city of bricks and left it a city of marble.'),
+     Pair<String, String>('assets/ramesses.jpg', 'I charged all countries, while I was alone, my infantry and my chariotry having forsaken me.')
+];

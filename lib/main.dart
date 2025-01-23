@@ -58,18 +58,9 @@ class _MyAppState extends ConsumerState<MyApp> {
   @override
   Widget build(BuildContext context) {
     List<Widget> Pages = [
-<<<<<<< HEAD
-      Home(
-        1,
-        selected_page: selected_index,
-      ),
-      ForumPage(selected_page: selected_index, themeNumber: 1),
-      TimelinePage(themeNumber: 1),
-=======
-      Home(1, selected_page: selected_index,),
+      Home(1, selectedPage: selected_index,),
       ForumPage(selected_page: selected_index, themeNumber: 1),
       TimelinePage(themeNumber: 1)
->>>>>>> 03735e70f445ab2abcdd9961f4037ff88394b2d5
     ];
     final themeMode = ref.watch(themeModeProvider);
     return MaterialApp(
@@ -89,7 +80,7 @@ class _MyAppState extends ConsumerState<MyApp> {
               BottomNavigationBarItem(
                   label: "Discussion", icon: Icon(Icons.chat)),
               BottomNavigationBarItem(
-                  label: "Profile", icon: Icon(Icons.person)),
+                  label: "History", icon: Icon(Icons.timeline)),
             ]),
       ),
     );

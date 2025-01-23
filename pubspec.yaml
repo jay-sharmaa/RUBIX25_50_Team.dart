@@ -43,6 +43,9 @@ dependencies:
   timelines_plus: ^1.0.6
   pair: 
   url_launcher: 
+  image_picker: ^1.1.2
+  google_mlkit_text_recognition: ^0.14.0
+  flutter_tts: ^4.2.1
 
 dev_dependencies:
   flutter_test:
@@ -107,6 +110,11 @@ flutter:
     - assets/499-479Greece-persianWar.jpg 
     - assets/334-326BCAlexander.jpg 
     - assets/214-205BCMacedonianWar.png
+    - assets/plato.png
+    - assets/ceasor.png
+    - assets/ramesses.jpg
+    - assets/ashoka.jpg
+    - assets/ancient.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
