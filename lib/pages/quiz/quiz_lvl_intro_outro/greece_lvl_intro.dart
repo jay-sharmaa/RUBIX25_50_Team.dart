@@ -101,7 +101,7 @@ class _Level1PageState extends State<Level1Page>
                                 ),
                               ),
                               Text(
-                                "HOUSE",
+                                "STOA",
                                 style: GoogleFonts.cinzel(
                                   fontSize: 50,
                                   fontWeight: FontWeight.bold,
@@ -117,7 +117,7 @@ class _Level1PageState extends State<Level1Page>
                                 ),
                               ),
                               Text(
-                                "LIFE",
+                                "ATTALOS",
                                 style: GoogleFonts.cinzel(
                                   fontSize: 70,
                                   fontWeight: FontWeight.bold,
@@ -237,7 +237,21 @@ class Level1End extends StatelessWidget {
               ),
               SizedBox(height: 10),
               Text(
-                'THE SCRIBE',
+                "THE",
+                style: GoogleFonts.cinzel(
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
+              ),
+              Text(
+                "PHILOSOPHER'S",
+                style: GoogleFonts.cinzel(
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
+              ),
+              Text(
+                "APPRENTICE",
                 style: GoogleFonts.cinzel(
                     fontSize: 50,
                     fontWeight: FontWeight.bold,
@@ -245,7 +259,7 @@ class Level1End extends StatelessWidget {
               ),
               SizedBox(height: 20),
               Image.asset(
-                'assets/scribe.jpg',
+                'assets/apprentice.jpg',
                 height: 200,
               ),
               SizedBox(height: 30),
@@ -364,31 +378,15 @@ class _Level2PageState extends State<Level2Page>
                                 style: GoogleFonts.cinzel(
                                   fontSize: 30,
                                   fontWeight: FontWeight.bold,
-                                  color: Colors.white,
+                                  color: Colors.black,
                                 ),
                               ),
                               Text(
-                                "TEMPLE",
+                                "LYCEUM",
                                 style: GoogleFonts.cinzel(
-                                  fontSize: 50,
+                                  fontSize: 60,
                                   fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                ),
-                              ),
-                              Text(
-                                "Of",
-                                style: GoogleFonts.cinzel(
-                                  fontSize: 30,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                ),
-                              ),
-                              Text(
-                                "KARNAK",
-                                style: GoogleFonts.cinzel(
-                                  fontSize: 70,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
+                                  color: Colors.black,
                                 ),
                               ),
                             ],
@@ -479,71 +477,74 @@ class Level2End extends StatelessWidget {
           ),
         ),
         child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                color: Colors.white.withOpacity(0.3),
-                padding: EdgeInsets.all(10),
-                child: Text(
-                  "YOU PASS!",
-                  style: GoogleFonts.eagleLake(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w600,
-                    color: const Color.fromARGB(255, 117, 3, 3),
+          child: Container(
+            color: Colors.white.withOpacity(0.3),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  color: Colors.white.withOpacity(0.3),
+                  padding: EdgeInsets.all(10),
+                  child: Text(
+                    "YOU PASS!",
+                    style: GoogleFonts.eagleLake(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w600,
+                      color: const Color.fromARGB(255, 117, 3, 3),
+                    ),
                   ),
                 ),
-              ),
-              SizedBox(height: 50),
-              Text(
-                'YOUR TITLE:',
-                style: GoogleFonts.cinzel(
-                    fontSize: 25,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white),
-              ),
-              SizedBox(height: 10),
-              Text(
-                'KEEPER',
-                style: GoogleFonts.cinzel(
-                    fontSize: 60,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white),
-              ),
-              Text(
-                'OF',
-                style: GoogleFonts.cinzel(
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white),
-              ),
-              Text(
-                'SCROLLS',
-                style: GoogleFonts.cinzel(
-                    fontSize: 60,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white),
-              ),
-              SizedBox(height: 20),
-              Image.asset(
-                'assets/keeper.jpg',
-                height: 200,
-              ),
-              SizedBox(height: 30),
-              ElevatedButton(
-                onPressed: () {
-                  // Navigate to the next page
-                  Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(builder: (context) => Level3Page()),
-                  );
-                },
-                child: Text(
-                  'Next',
-                  style: GoogleFonts.cinzel(),
+                SizedBox(height: 50),
+                Text(
+                  'YOUR TITLE:',
+                  style: GoogleFonts.cinzel(
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black),
                 ),
-              ),
-            ],
+                SizedBox(height: 10),
+                Text(
+                  'DISCIPLE',
+                  style: GoogleFonts.cinzel(
+                      fontSize: 60,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black),
+                ),
+                Text(
+                  'OF',
+                  style: GoogleFonts.cinzel(
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black),
+                ),
+                Text(
+                  'ATHENA',
+                  style: GoogleFonts.cinzel(
+                      fontSize: 60,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black),
+                ),
+                SizedBox(height: 20),
+                Image.asset(
+                  'assets/athena.jpg',
+                  height: 200,
+                ),
+                SizedBox(height: 30),
+                ElevatedButton(
+                  onPressed: () {
+                    // Navigate to the next page
+                    Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(builder: (context) => Level3Page()),
+                    );
+                  },
+                  child: Text(
+                    'Next',
+                    style: GoogleFonts.cinzel(),
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),
@@ -641,11 +642,11 @@ class _Level3PageState extends State<Level3Page>
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                "LIBRARY",
+                                "ACADEMY",
                                 style: GoogleFonts.cinzel(
                                   fontSize: 50,
                                   fontWeight: FontWeight.bold,
-                                  color: Colors.white,
+                                  color: Colors.black,
                                 ),
                               ),
                               Text(
@@ -653,15 +654,15 @@ class _Level3PageState extends State<Level3Page>
                                 style: GoogleFonts.cinzel(
                                   fontSize: 30,
                                   fontWeight: FontWeight.bold,
-                                  color: Colors.white,
+                                  color: Colors.black,
                                 ),
                               ),
                               Text(
-                                "ALEXANDRIA",
+                                "PLATO",
                                 style: GoogleFonts.cinzel(
-                                  fontSize: 48,
+                                  fontSize: 60,
                                   fontWeight: FontWeight.bold,
-                                  color: Colors.white,
+                                  color: Colors.black,
                                 ),
                               ),
                             ],
@@ -752,80 +753,83 @@ class Level3End extends StatelessWidget {
           ),
         ),
         child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                color: Colors.white.withOpacity(0.3),
-                padding: EdgeInsets.all(10),
-                child: Text(
-                  "YOU PASS!",
-                  style: GoogleFonts.eagleLake(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w600,
-                    color: const Color.fromARGB(255, 117, 3, 3),
+          child: Container(
+            color: Colors.white.withOpacity(0.3),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  color: Colors.white.withOpacity(0.3),
+                  padding: EdgeInsets.all(10),
+                  child: Text(
+                    "YOU PASS!",
+                    style: GoogleFonts.eagleLake(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w600,
+                      color: const Color.fromARGB(255, 117, 3, 3),
+                    ),
                   ),
                 ),
-              ),
-              SizedBox(height: 20),
-              Text(
-                'YOUR TITLE:',
-                style: GoogleFonts.cinzel(
-                    fontSize: 25,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white),
-              ),
-              SizedBox(height: 10),
-              Text(
-                'THE',
-                style: GoogleFonts.cinzel(
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white),
-              ),
-              Text(
-                'ARCHIVIST',
-                style: GoogleFonts.cinzel(
-                    fontSize: 50,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white),
-              ),
-              Text(
-                'OF',
-                style: GoogleFonts.cinzel(
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white),
-              ),
-              Center(
-                child: Text(
-                  'ALEXANDRIA',
+                SizedBox(height: 20),
+                Text(
+                  'YOUR TITLE:',
+                  style: GoogleFonts.cinzel(
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black),
+                ),
+                SizedBox(height: 10),
+                Text(
+                  'THE',
+                  style: GoogleFonts.cinzel(
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black),
+                ),
+                Text(
+                  'ARCHON',
                   style: GoogleFonts.cinzel(
                       fontSize: 50,
                       fontWeight: FontWeight.bold,
-                      color: Colors.white),
+                      color: Colors.black),
                 ),
-              ),
-              SizedBox(height: 20),
-              Image.asset(
-                'assets/archivist.jpg',
-                height: 200,
-              ),
-              SizedBox(height: 30),
-              ElevatedButton(
-                onPressed: () {
-                  // Navigate to the next page
-                  Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(builder: (context) => Level4Page()),
-                  );
-                },
-                child: Text(
-                  'Next',
-                  style: GoogleFonts.cinzel(),
+                Text(
+                  'OF',
+                  style: GoogleFonts.cinzel(
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black),
                 ),
-              ),
-            ],
+                Center(
+                  child: Text(
+                    'LEARNING',
+                    style: GoogleFonts.cinzel(
+                        fontSize: 50,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black),
+                  ),
+                ),
+                SizedBox(height: 20),
+                Image.asset(
+                  'assets/archon.jpg',
+                  height: 200,
+                ),
+                SizedBox(height: 30),
+                ElevatedButton(
+                  onPressed: () {
+                    // Navigate to the next page
+                    Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(builder: (context) => Level4Page()),
+                    );
+                  },
+                  child: Text(
+                    'Next',
+                    style: GoogleFonts.cinzel(),
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),
@@ -931,7 +935,7 @@ class _Level4PageState extends State<Level4Page>
                                 ),
                               ),
                               Text(
-                                "TEMPLE",
+                                "LIBRARY",
                                 style: GoogleFonts.cinzel(
                                   fontSize: 50,
                                   fontWeight: FontWeight.bold,
@@ -947,9 +951,9 @@ class _Level4PageState extends State<Level4Page>
                                 ),
                               ),
                               Text(
-                                "RA",
+                                "PERGAMON",
                                 style: GoogleFonts.cinzel(
-                                  fontSize: 70,
+                                  fontSize: 50,
                                   fontWeight: FontWeight.bold,
                                   color: Colors.black,
                                 ),
@@ -1067,29 +1071,22 @@ class Level4End extends StatelessWidget {
               ),
               SizedBox(height: 10),
               Text(
-                'THE VIZIER',
+                'THE',
                 style: GoogleFonts.cinzel(
-                    fontSize: 50,
+                    fontSize: 40,
                     fontWeight: FontWeight.bold,
                     color: Colors.black),
               ),
               Text(
-                'OF',
+                'PHILOSOPHER',
                 style: GoogleFonts.cinzel(
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black),
-              ),
-              Text(
-                'RA',
-                style: GoogleFonts.cinzel(
-                    fontSize: 70,
+                    fontSize: 45,
                     fontWeight: FontWeight.bold,
                     color: Colors.black),
               ),
               SizedBox(height: 20),
               Image.asset(
-                'assets/vizier.jpg',
+                'assets/greek_sage.jpg',
                 height: 200,
               ),
               SizedBox(height: 30),

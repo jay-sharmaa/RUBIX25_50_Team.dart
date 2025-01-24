@@ -5,6 +5,10 @@ import 'package:rubix_time_machine/pages/forum_page.dart';
 import 'package:rubix_time_machine/pages/home.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:rubix_time_machine/pages/timeline_page.dart';
+import 'package:rubix_time_machine/pages/quiz/quiz_intros/egypt_quiz_page.dart';
+import 'package:rubix_time_machine/pages/quiz/quiz_intros/greece_quiz_page.dart';
+import 'package:rubix_time_machine/pages/quiz/quiz_intros/rome_quiz_page.dart';
+import 'package:rubix_time_machine/pages/quiz/quiz_intros/india_quiz_page.dart';
 import 'pages/timeline_page.dart';
 import 'utils/colors.dart';
 
@@ -60,7 +64,7 @@ class _MyAppState extends ConsumerState<MyApp> {
     List<Widget> Pages = [
       Home(
         1,
-        selected_page: selected_index,
+        selectedPage: selected_index,
       ),
       ForumPage(selected_page: selected_index, themeNumber: 1),
       TimelinePage(themeNumber: 1)
@@ -83,7 +87,8 @@ class _MyAppState extends ConsumerState<MyApp> {
               BottomNavigationBarItem(
                   label: "Discussion", icon: Icon(Icons.chat)),
               BottomNavigationBarItem(
-                  label: "Profile", icon: Icon(Icons.person)),
+                  label: "History", icon: Icon(Icons.timeline)),
+              BottomNavigationBarItem(label: "Trivia", icon: Icon(Icons.quiz)),
             ]),
       ),
     );

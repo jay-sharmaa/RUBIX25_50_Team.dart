@@ -43,6 +43,9 @@ dependencies:
   timelines_plus: ^1.0.6
   pair: 
   url_launcher: 
+  image_picker: ^1.1.2
+  google_mlkit_text_recognition: ^0.14.0
+  flutter_tts: ^4.2.1
 
 dev_dependencies:
   flutter_test:
@@ -123,6 +126,27 @@ flutter:
     - assets/keeper.jpg
     - assets/archivist.jpg
     - assets/vizier.jpg
+    - assets/orator.jpg
+    - assets/advisor.jpg
+    - assets/consul.jpg
+    - assets/senator.jpg
+    - assets/apprentice.jpg
+    - assets/athena.jpg
+    - assets/archon.jpg
+    - assets/greek_sage.jpg
+    - assets/disciple.jpg
+    - assets/seeker.jpg
+    - assets/dharma.jpg
+    - assets/indian_sage.jpg
+    - assets/plato.png
+    - assets/ceasor.png
+    - assets/ramesses.jpg
+    - assets/ashoka.jpg
+    - assets/ancient.jpg
+    - assets/fall_of_rome.png
+    - assets/greece.png
+    - assets/egypt_thumbnail.png
+    - assets/youtube_png.webp
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

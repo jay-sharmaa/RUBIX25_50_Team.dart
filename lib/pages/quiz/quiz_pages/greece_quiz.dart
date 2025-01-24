@@ -21,42 +21,43 @@ class _GreeceQuiz1State extends State<GreeceQuiz1> {
       "overlayImage": "assets/greece_lvl2_img.jpg"
     },
     {
-      "question": "What is the ancient Greeceian writing system called?",
-      "options": ["Cuneiform", "Hieroglyphs", "Runes", "Latin"],
-      "correct": "Hieroglyphs",
+      "question": "Who is considered the king of the Greek gods?",
+      "options": ["Poseidon", "Hades", "Zeus", "Apollo"],
+      "correct": "Zeus",
       "explanation":
-          "The ancient Greeceians used Hieroglyphs as their writing system, which consisted of pictorial symbols.",
+          "Zeus was the ruler of Mount Olympus and the God of the Sky, Thunder, and Justice.",
       "overlayImage": "assets/greece_lvl2_img.jpg"
     },
     {
       "question":
-          "Which river was essential to ancient Greeceian civilization?",
-      "options": ["Tigris", "Nile", "Euphrates", "Amazon"],
-      "correct": "Nile",
-      "explanation":
-          "The Nile River was essential for agriculture, transportation, and sustaining life in ancient Greece.",
-      "overlayImage": "assets/greece_lvl2_img.jpg"
-    },
-    {
-      "question": "What was the purpose of mummification in ancient Greece?",
+          "What was the primary purpose of the Olympic Games in Ancient Greece?",
       "options": [
-        "To preserve the body for an afterlife",
-        "To prevent disease",
-        "To honor the deceased",
-        "To prepare the body for burial"
+        "Entertainment",
+        "Honoring Zeus",
+        "Training soldiers",
+        "Celebrating Harvest"
       ],
-      "correct": "To preserve the body for an afterlife",
+      "correct": "Honoring Zeus",
       "explanation":
-          "Ancient Greeceians believed that the preservation of the body was essential for the soul to continue its journey in the afterlife.",
+          "The ancient Greeks believed that competitions of physical strength and agility pleased the Gods, so they held the Olympic Games every 4 years to honor Zeus",
       "overlayImage": "assets/greece_lvl2_img.jpg"
     },
     {
       "question":
-          "What was the primary material used to make the ancient Greeceian writing tool, the reed pen?",
-      "options": ["Wood", "Metal", "Papyrus", "Stone"],
-      "correct": "Papyrus",
+          "What form of government did Athens develop around the 5th century BCE?",
+      "options": ["Monarchy", "Oligarchy", "Democracy", "Republic"],
+      "correct": "Democracy",
       "explanation":
-          "Papyrus reeds were used to make a type of paper and also to create pens for writing.",
+          "Athens is credited with developing one of the earliest forms of democracy.",
+      "overlayImage": "assets/greece_lvl2_img.jpg"
+    },
+    {
+      "question":
+          "Which city-state is famous for its military training and discipline?",
+      "options": ["Athens", "Sparta", "Corinth", "Thebes"],
+      "correct": "Sparta",
+      "explanation":
+          "Sparta was known for its warrior society and rigorous military education.",
       "overlayImage": "assets/greece_lvl2_img.jpg"
     },
   ];
@@ -133,15 +134,18 @@ class _GreeceQuiz1State extends State<GreeceQuiz1> {
                 ),
                 SizedBox(height: 20),
                 // Main Question
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                  child: Text(
-                    currentQuestion['question'],
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.cinzel(
-                      fontSize: 24,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
+                Container(
+                  color: Colors.black.withOpacity(0.3),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                    child: Text(
+                      currentQuestion['question'],
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.cinzel(
+                        fontSize: 24,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                 ),
@@ -276,52 +280,45 @@ class _GreeceQuiz2State extends State<GreeceQuiz2> {
   // Questions, Options, and Overlay Assets
   final List<Map<String, dynamic>> questions = [
     {
-      "question": "What was the ancient Greeceian name for the underworld?",
-      "options": ["Amenti", "Duat", "Osiris II", "Anubis"],
-      "correct": "Duat",
+      "question": "What was the central marketplace in Athens called?",
+      "options": ["Forum", "Agora", "Acropolis", "Stoa"],
+      "correct": "Agora",
       "explanation":
-          "The Duat was the ancient Greeceian underworld, where the souls of the deceased were judged and either rewarded or punished.",
+          "The Agora was a hub for social, political, and economic activities in Athens.",
       "overlayImage": "assets/greece_lvl2_img.jpg"
     },
     {
       "question":
-          "Which pharaoh attempted to reform Greeceian religion by introducing monotheism?",
-      "options": ["Tutankhamun", "Akhenaten", "Ramses II", "Cleopatra"],
-      "correct": "Akhenaten",
+          "Which Greek philosopher was the teacher of Alexander the Great?",
+      "options": ["Plato", "Socrates", "Aristotle", "Pythagoras"],
+      "correct": "Aristotle",
       "explanation":
-          "Akhenaten, also known as Amenhotep IV, introduced the worship of the sun disk Aten as the one true god.",
+          "Aristotle tutored Alexander and had a profound influence on his thinking.",
       "overlayImage": "assets/greece_lvl2_img.jpg"
     },
     {
       "question":
-          "What was the name of the ancient Greeceian book of the dead?",
-      "options": [
-        "The Book of the Nile",
-        "The Book of Coming Forth by Day",
-        "The Book of the Pyramids",
-        "The Book of Life"
-      ],
-      "correct": "The Book of Coming Forth by Day",
+          "What is the name of the famous temple dedicated to Athena in Athens?",
+      "options": ["Parthenon", "Pantheon", "Erechtheions", "Temple of Apollo"],
+      "correct": "Parthenon",
       "explanation":
-          "The Book of Coming Forth by Day was a collection of spells and rituals and was believed to help the deceased navigate the afterlife.",
+          "The Parthenon was built during the 5th century BCE to honor Athena, the city’s patron goddess. Not to be confused with the Pantheon, the Roman Temple of Gods.",
       "overlayImage": "assets/greece_lvl2_img.jpg"
     },
     {
-      "question":
-          "What was the name of the ancient Greeceian capital city during the Old Kingdom?",
-      "options": ["Thebes", "Memphis", "Alexandria", "Giza"],
-      "correct": "Memphis",
+      "question": "Who was the Greek god of wine and revelry?",
+      "options": ["Dionysus", "Apollo", "Hermes", "Hephaestus"],
+      "correct": "Dionysus",
       "explanation":
-          "Memphis was the capital of ancient Greece during the Old Kingdom and a major religious and cultural center.",
+          "Dionysus was associated with wine, theater, and ecstatic celebrations.",
       "overlayImage": "assets/greece_lvl2_img.jpg"
     },
     {
-      "question":
-          "Which pharaoh is known for his extensive building projects, including the Abu Simbel temples?",
-      "options": ["Tutankhamun", "Akhenaten", "Ramses II", "Cleopatra"],
-      "correct": "Ramses II",
+      "question": "Which Greek historian is known as the Father of History?",
+      "options": ["Thucydides", "Herodotus", "Xenophon", "Polybius"],
+      "correct": "Herodotus",
       "explanation":
-          "Ramses II was a powerful pharaoh who ruled for over 60 years and left behind numerous monuments and temples.",
+          "Herodotus was the first to record historical events systematically in his work - HISTORIES.",
       "overlayImage": "assets/greece_lvl2_img.jpg"
     },
   ];
@@ -398,15 +395,18 @@ class _GreeceQuiz2State extends State<GreeceQuiz2> {
                 ),
                 SizedBox(height: 20),
                 // Main Question
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                  child: Text(
-                    currentQuestion['question'],
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.cinzel(
-                      fontSize: 24,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
+                Container(
+                  color: Colors.black.withOpacity(0.3),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                    child: Text(
+                      currentQuestion['question'],
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.cinzel(
+                        fontSize: 24,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                 ),
@@ -541,57 +541,62 @@ class _GreeceQuiz3State extends State<GreeceQuiz3> {
   // Questions, Options, and Overlay Assets
   final List<Map<String, dynamic>> questions = [
     {
-      "question": "What was the purpose of the ancient Greeceian pyramids?",
+      "question":
+          "What was the main focus of the Delian League, led by Athens?",
       "options": [
-        "To serve as temples",
-        "To house royal tombs",
-        "To be used as fortresses",
-        "To store grain"
+        "Trade",
+        "Military alliance against Persia",
+        "Expansion of democracy",
+        "Cultural exchange"
       ],
-      "correct": "To house royal tombs",
+      "correct": "Military alliance against Persia",
       "explanation":
-          "The pyramids were built as monumental tombs for pharaohs and their consorts.",
+          "The Delian League was a military alliance of Greek city-states formed in 478 BCE to protect themselves from the Persian Empire. The league was led by Athens and was based on the island of Delos.",
       "overlayImage": "assets/greece_lvl2_img.jpg"
     },
     {
       "question":
-          "What is the name of the ancient Greeceian instrument that resembles a flute?",
-      "options": ["Sistra", "Ney", "Daf", "Oud"],
-      "correct": "Ney",
+          "What is the name of the female poet from Ancient Greece, known for her lyric poetry?",
+      "options": ["Sappho", "Aspasia", "Diotima", "Pindar"],
+      "correct": "Sappho",
       "explanation":
-          "The ney is a double-reed woodwind instrument that was popular in ancient Greece.",
+          "Sappho, from the island of Lesbos, wrote emotional poetry, much of which survives in fragments.",
       "overlayImage": "assets/greece_lvl2_img.jpg"
     },
     {
       "question":
-          "Which god was associated with wisdom and writing in ancient Greece?",
-      "options": ["Thoth", "Horus", "Anubis", "Osiris"],
-      "correct": "Thoth",
+          "Which early Greek civilization built the palace of Knossos on Crete?",
+      "options": ["Mycenaeans", "Minoans", "Dorians", "Trojans"],
+      "correct": "Minoans",
       "explanation":
-          "Thoth was the god of wisdom, magic, and writing, often depicted with the head of an ibis or baboon.",
+          "Knossos is the name of an ancient city center-palace, built by the Minoan people on the island of Crete, which is in the Mediterranean Sea.",
       "overlayImage": "assets/greece_lvl2_img.jpg"
     },
     {
-      "question":
-          "Which famous archaeologist discovered the tomb of Tutankhamun?",
+      "question": "What was the significance of the Pythian Games in Greece?",
       "options": [
-        "Howard Carter",
-        "Jean-François Champollion",
-        "Flinders Petrie",
-        "Arthur Evans"
+        "Celebrated military victories",
+        "Honored Apollo",
+        "Promoted trade among city-states",
+        "Commemorated the founding of Athens"
       ],
-      "correct": "Howard Carter",
+      "correct": "Honored Apollo",
       "explanation":
-          "Howard Carter's discovery of Tutankhamun's intact tomb in 1922 was a major archaeological sensation.",
+          "The Pythian Games, held at Delphi, celebrated Apollo with music, poetry, and athletic contests.",
       "overlayImage": "assets/greece_lvl2_img.jpg"
     },
     {
       "question":
-          "What is the name of the ancient Greeceian symbol that represents eternal life?",
-      "options": ["Ankh", "Scarab", "Eye of Horus", "Djed pillar "],
-      "correct": "Ankh",
+          "What battle ended the Persian invasion of Greece in 479 BCE?",
+      "options": [
+        "Battle of Marathon",
+        "Battle of Thermopylae",
+        "Battle of Salamis",
+        "Battle of Plataea"
+      ],
+      "correct": "Battle of Plataea",
       "explanation":
-          "The ankh, also known as the CRUX ANSATA, is a symbol of life and immortality.",
+          "The Battle of Plataea was a decisive land battle in 479 BC between the Greek city-states and the Persian Empire. It was the final land battle of the second Persian invasion of Greece. It was won by the Greeks.",
       "overlayImage": "assets/greece_lvl2_img.jpg"
     },
   ];
@@ -668,15 +673,18 @@ class _GreeceQuiz3State extends State<GreeceQuiz3> {
                 ),
                 SizedBox(height: 20),
                 // Main Question
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                  child: Text(
-                    currentQuestion['question'],
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.cinzel(
-                      fontSize: 24,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
+                Container(
+                  color: Colors.black.withOpacity(0.3),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                    child: Text(
+                      currentQuestion['question'],
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.cinzel(
+                        fontSize: 24,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                 ),
@@ -812,59 +820,56 @@ class _GreeceQuiz4State extends State<GreeceQuiz4> {
   final List<Map<String, dynamic>> questions = [
     {
       "question":
-          "Which festival was celebrated in ancient Greece to honor the rising of the Nile?",
-      "options": [
-        "Sed Festival",
-        "Feast of Opet",
-        "Feast of Min",
-        "Feast of Wadjet"
-      ],
-      "correct": "Feast of Opet",
+          "Who was the sculptor behind the statue of Zeus at Olympia, one of the Seven Wonders of the Ancient World?",
+      "options": ["Phidias", "Polykleitos", "Praxiteles", "Lysippos"],
+      "correct": "Phidias",
       "explanation":
-          "The Feast of Opet was a major religious festival that celebrated the annual flooding of the Nile.",
+          "Phidias was an Ancient Greek sculptor, painter, and architect, active in the 5th century BC. His Statue of Zeus at Olympia was one of the Seven Wonders of the Ancient World. He also created the statue of Athena in the Parthenon.",
       "overlayImage": "assets/greece_lvl2_img.jpg"
     },
     {
-      "question": "What was the role of scribes in ancient Greeceian society?",
-      "options": ["Warriors", "Farmers", "Priests", "Administrators"],
-      "correct": "Administrators",
-      "explanation":
-          "Scribes were highly educated individuals who served as record-keepers, administrators, and advisors to the pharaoh.",
-      "overlayImage": "assets/greece_lvl2_img.jpg"
-    },
-    {
-      "question": "What was the significance of the Rosetta Stone?",
+      "question": "What was the significance of the SACRED BAND OF THEBES?",
       "options": [
-        "It revealed the secrets of mummification.",
-        "It helped decipher hieroglyphs.",
-        "It was used as a cornerstone for the Great Pyramid.",
-        "It was a map of ancient Greece."
+        "A group of philosophers",
+        "An elite military unit",
+        "A cult of Apollo",
+        "A theatrical troupe"
       ],
-      "correct": "It helped decipher hieroglyphs.",
+      "correct": "An elite military unit",
       "explanation":
-          "The Rosetta Stone is a large, broken stone tablet that was discovered in Greece in 1799. It is inscribed with the same text in three scripts: hieroglyphic, Demotic, and Greek. The stone is a key to understanding Greeceian hieroglyphs and is one of the most famous objects in the British Museum.",
+          "The Sacred Band was a Theban elite force of 150 pairs of male lovers, believed to fight with unparalleled courage.",
       "overlayImage": "assets/greece_lvl2_img.jpg"
     },
     {
       "question":
-          "What was the impact of the Hyksos invasion on ancient Greece?",
+          "What innovation in naval warfare did the Greeks develop during the Battle of Salamis?",
       "options": [
-        "It led to a period of cultural decline.",
-        "Introduced new technologies and weapons to Greece.",
-        "It had little impact on Greeceian society.",
-        "It resulted in the unification of Upper and Lower Greece."
+        "Use of iron weapons",
+        "Trireme ships",
+        "Flaming arrows",
+        "Catapults"
       ],
-      "correct": "Introduced new technologies and weapons to Greece.",
+      "correct": "Trireme ships",
       "explanation":
-          "The Hyksos, a group of foreign rulers, brought new technologies like horse-drawn chariots and bronze weaponry to Greece.",
+          "The trireme, a fast and maneuverable warship, was key to the Greek victory against the Persians.",
       "overlayImage": "assets/greece_lvl2_img.jpg"
     },
     {
-      "question": "What was the ancient Greeceian name for the city of Thebes?",
-      "options": ["Iunu", "Waset", "Nekhen", "Per-Ramesses"],
-      "correct": "Waset",
+      "question":
+          "Which Greek city-state established the first known public theater?",
+      "options": ["Athens", "Delphi", "Corinth", "Thebes"],
+      "correct": "Athens",
       "explanation":
-          "The city we now call Thebes was known as Waset to the ancient Greeceians. It was a prominent city during the New Kingdom and served as the religious capital, housing the Karnak and Luxor temples dedicated to the god Amun.",
+          "The Theater of Dionysus in Athens hosted the first dramatic performances.",
+      "overlayImage": "assets/greece_lvl2_img.jpg"
+    },
+    {
+      "question":
+          "Which Greek city-state used iron bars as currency instead of coins?",
+      "options": ["Sparta", "Athens", "Corinth", "Delos"],
+      "correct": "Sparta",
+      "explanation":
+          "The Spartans used iron bars, called pelanoi, as currency to make it difficult to accumulate wealth. They were prohibited by law from owning gold and silver coins. This was to discourage citizens from hoarding wealth and trading.",
       "overlayImage": "assets/greece_lvl2_img.jpg"
     },
   ];
@@ -936,20 +941,23 @@ class _GreeceQuiz4State extends State<GreeceQuiz4> {
                   style: GoogleFonts.cinzel(
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
-                    color: Colors.black,
+                    color: Colors.white,
                   ),
                 ),
                 SizedBox(height: 20),
                 // Main Question
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                  child: Text(
-                    currentQuestion['question'],
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.cinzel(
-                      fontSize: 24,
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold,
+                Container(
+                  color: Colors.black.withOpacity(0.3),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                    child: Text(
+                      currentQuestion['question'],
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.cinzel(
+                        fontSize: 24,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                 ),

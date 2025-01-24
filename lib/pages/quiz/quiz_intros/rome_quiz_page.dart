@@ -52,7 +52,7 @@ class _RomeTriviaPageState extends State<RomeTriviaPage> {
               height: MediaQuery.of(context).size.height,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/ancient_rome_quiz_img.jpg'),
+                  image: AssetImage('assets/ancient_rome_quiz_img.jpeg'),
                   fit: BoxFit.cover,
                   alignment: Alignment.topCenter,
                 ),

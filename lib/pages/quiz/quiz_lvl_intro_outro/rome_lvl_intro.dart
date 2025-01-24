@@ -97,31 +97,23 @@ class _Level1PageState extends State<Level1Page>
                                 style: GoogleFonts.cinzel(
                                   fontSize: 30,
                                   fontWeight: FontWeight.bold,
-                                  color: Colors.white,
+                                  color: Colors.black,
                                 ),
                               ),
                               Text(
-                                "HOUSE",
+                                "FORUM",
                                 style: GoogleFonts.cinzel(
                                   fontSize: 50,
                                   fontWeight: FontWeight.bold,
-                                  color: Colors.white,
+                                  color: Colors.black,
                                 ),
                               ),
                               Text(
-                                "Of",
+                                "ROMANUM",
                                 style: GoogleFonts.cinzel(
-                                  fontSize: 30,
+                                  fontSize: 55,
                                   fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                ),
-                              ),
-                              Text(
-                                "LIFE",
-                                style: GoogleFonts.cinzel(
-                                  fontSize: 70,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
+                                  color: Colors.black,
                                 ),
                               ),
                             ],
@@ -233,19 +225,19 @@ class Level1End extends StatelessWidget {
                 style: GoogleFonts.cinzel(
                     fontSize: 25,
                     fontWeight: FontWeight.bold,
-                    color: Colors.white),
+                    color: Colors.black),
               ),
               SizedBox(height: 10),
               Text(
-                'THE SCRIBE',
+                'THE ORATOR',
                 style: GoogleFonts.cinzel(
                     fontSize: 50,
                     fontWeight: FontWeight.bold,
-                    color: Colors.white),
+                    color: Colors.black),
               ),
               SizedBox(height: 20),
               Image.asset(
-                'assets/scribe.jpg',
+                'assets/orator.jpg',
                 height: 200,
               ),
               SizedBox(height: 30),
@@ -364,31 +356,23 @@ class _Level2PageState extends State<Level2Page>
                                 style: GoogleFonts.cinzel(
                                   fontSize: 30,
                                   fontWeight: FontWeight.bold,
-                                  color: Colors.white,
+                                  color: Colors.black,
                                 ),
                               ),
                               Text(
-                                "TEMPLE",
+                                "ULPIAN",
                                 style: GoogleFonts.cinzel(
                                   fontSize: 50,
                                   fontWeight: FontWeight.bold,
-                                  color: Colors.white,
+                                  color: Colors.black,
                                 ),
                               ),
                               Text(
-                                "Of",
+                                "LIBRARY",
                                 style: GoogleFonts.cinzel(
-                                  fontSize: 30,
+                                  fontSize: 60,
                                   fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                ),
-                              ),
-                              Text(
-                                "KARNAK",
-                                style: GoogleFonts.cinzel(
-                                  fontSize: 70,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
+                                  color: Colors.black,
                                 ),
                               ),
                             ],
@@ -500,33 +484,26 @@ class Level2End extends StatelessWidget {
                 style: GoogleFonts.cinzel(
                     fontSize: 25,
                     fontWeight: FontWeight.bold,
-                    color: Colors.white),
+                    color: Colors.black),
               ),
               SizedBox(height: 10),
               Text(
-                'KEEPER',
+                'THE',
+                style: GoogleFonts.cinzel(
+                    fontSize: 35,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black),
+              ),
+              Text(
+                'ADVISOR',
                 style: GoogleFonts.cinzel(
                     fontSize: 60,
                     fontWeight: FontWeight.bold,
-                    color: Colors.white),
-              ),
-              Text(
-                'OF',
-                style: GoogleFonts.cinzel(
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white),
-              ),
-              Text(
-                'SCROLLS',
-                style: GoogleFonts.cinzel(
-                    fontSize: 60,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white),
+                    color: Colors.black),
               ),
               SizedBox(height: 20),
               Image.asset(
-                'assets/keeper.jpg',
+                'assets/advisor.jpg',
                 height: 200,
               ),
               SizedBox(height: 30),
@@ -641,25 +618,17 @@ class _Level3PageState extends State<Level3Page>
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                "LIBRARY",
-                                style: GoogleFonts.cinzel(
-                                  fontSize: 50,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                ),
-                              ),
-                              Text(
-                                "Of",
-                                style: GoogleFonts.cinzel(
-                                  fontSize: 30,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                ),
-                              ),
-                              Text(
-                                "ALEXANDRIA",
+                                "AULA",
                                 style: GoogleFonts.cinzel(
                                   fontSize: 48,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                ),
+                              ),
+                              Text(
+                                "PALATINA",
+                                style: GoogleFonts.cinzel(
+                                  fontSize: 50,
                                   fontWeight: FontWeight.bold,
                                   color: Colors.white,
                                 ),
@@ -779,36 +748,20 @@ class Level3End extends StatelessWidget {
               Text(
                 'THE',
                 style: GoogleFonts.cinzel(
-                    fontSize: 30,
+                    fontSize: 35,
                     fontWeight: FontWeight.bold,
                     color: Colors.white),
               ),
               Text(
-                'ARCHIVIST',
+                'CONSUL',
                 style: GoogleFonts.cinzel(
-                    fontSize: 50,
+                    fontSize: 60,
                     fontWeight: FontWeight.bold,
                     color: Colors.white),
-              ),
-              Text(
-                'OF',
-                style: GoogleFonts.cinzel(
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white),
-              ),
-              Center(
-                child: Text(
-                  'ALEXANDRIA',
-                  style: GoogleFonts.cinzel(
-                      fontSize: 50,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white),
-                ),
               ),
               SizedBox(height: 20),
               Image.asset(
-                'assets/archivist.jpg',
+                'assets/consul.jpg',
                 height: 200,
               ),
               SizedBox(height: 30),
@@ -931,7 +884,7 @@ class _Level4PageState extends State<Level4Page>
                                 ),
                               ),
                               Text(
-                                "TEMPLE",
+                                "ROMAN",
                                 style: GoogleFonts.cinzel(
                                   fontSize: 50,
                                   fontWeight: FontWeight.bold,
@@ -939,17 +892,9 @@ class _Level4PageState extends State<Level4Page>
                                 ),
                               ),
                               Text(
-                                "Of",
+                                "SENATE",
                                 style: GoogleFonts.cinzel(
-                                  fontSize: 30,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.black,
-                                ),
-                              ),
-                              Text(
-                                "RA",
-                                style: GoogleFonts.cinzel(
-                                  fontSize: 70,
+                                  fontSize: 60,
                                   fontWeight: FontWeight.bold,
                                   color: Colors.black,
                                 ),
@@ -1063,33 +1008,26 @@ class Level4End extends StatelessWidget {
                 style: GoogleFonts.cinzel(
                     fontSize: 25,
                     fontWeight: FontWeight.bold,
-                    color: Colors.black),
+                    color: Colors.white),
               ),
               SizedBox(height: 10),
               Text(
-                'THE VIZIER',
+                'THE',
+                style: GoogleFonts.cinzel(
+                    fontSize: 40,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
+              ),
+              Text(
+                'SENATOR',
                 style: GoogleFonts.cinzel(
                     fontSize: 50,
                     fontWeight: FontWeight.bold,
-                    color: Colors.black),
-              ),
-              Text(
-                'OF',
-                style: GoogleFonts.cinzel(
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black),
-              ),
-              Text(
-                'RA',
-                style: GoogleFonts.cinzel(
-                    fontSize: 70,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black),
+                    color: Colors.white),
               ),
               SizedBox(height: 20),
               Image.asset(
-                'assets/vizier.jpg',
+                'assets/senator.jpg',
                 height: 200,
               ),
               SizedBox(height: 30),

@@ -13,51 +13,53 @@ class _IndiaQuiz1State extends State<IndiaQuiz1> {
   final List<Map<String, dynamic>> questions = [
     {
       "question":
-          "What is the name of the pharaoh who built the Great Pyramid of Giza?",
-      "options": ["Khufu", "Tutankhamun", "Ramesses II", "Akhenaten"],
-      "correct": "Khufu",
-      "explanation":
-          "The Great Pyramid of Giza was built for Pharaoh Khufu. It is one of the Seven Wonders of the Ancient World.",
-      "overlayImage": "assets/india_lvl2_img.jpg"
-    },
-    {
-      "question": "What is the ancient Indiaian writing system called?",
-      "options": ["Cuneiform", "Hieroglyphs", "Runes", "Latin"],
-      "correct": "Hieroglyphs",
-      "explanation":
-          "The ancient Indiaians used Hieroglyphs as their writing system, which consisted of pictorial symbols.",
-      "overlayImage": "assets/india_lvl2_img.jpg"
-    },
-    {
-      "question": "Which river was essential to ancient Indiaian civilization?",
-      "options": ["Tigris", "Nile", "Euphrates", "Amazon"],
-      "correct": "Nile",
-      "explanation":
-          "The Nile River was essential for agriculture, transportation, and sustaining life in ancient India.",
-      "overlayImage": "assets/india_lvl2_img.jpg"
-    },
-    {
-      "question": "What was the purpose of mummification in ancient India?",
+          "What is the name of the ancient Indian river valley civilization?",
       "options": [
-        "To preserve the body for an afterlife",
-        "To prevent disease",
-        "To honor the deceased",
-        "To prepare the body for burial"
+        "Indus Valley Civilization",
+        "Mesopotamian Civilization",
+        "Mayan Civilization",
+        "Nile Valley Civilization"
       ],
-      "correct": "To preserve the body for an afterlife",
+      "correct": "Indus Valley Civilization",
       "explanation":
-          "Ancient Indiaians believed that the preservation of the body was essential for the soul to continue its journey in the afterlife.",
-      "overlayImage": "assets/india_lvl2_img.jpg"
+          "The Indus Valley Civilization was one of the world's earliest urban civilizations, flourishing around 2500 BCE in modern-day India and Pakistan.",
+      "overlayImage": "assets/india_lvl1_img.jpg"
+    },
+    {
+      "question": "Who is considered the founder of Buddhism?",
+      "options": ["Ashoka", "Mahavira", "Gautama Buddha", "Vishnu"],
+      "correct": "Gautama Buddha",
+      "explanation":
+          "Gautama Buddha, also known as Siddhartha Gautama, founded Buddhism in the 6th century BCE.",
+      "overlayImage": "assets/india_lvl1_img.jpg"
     },
     {
       "question":
-          "What was the primary material used to make the ancient Indiaian writing tool, the reed pen?",
-      "options": ["Wood", "Metal", "Papyrus", "Stone"],
-      "correct": "Papyrus",
+          "What is the ancient Indian text that discusses Philosophy and is also a conversation?",
+      "options": ["Mahabharata", "Rigveda", "Upanishads", "Bhagavad Gita"],
+      "correct": "Bhagavad Gita",
       "explanation":
-          "Papyrus reeds were used to make a type of paper and also to create pens for writing.",
-      "overlayImage": "assets/india_lvl2_img.jpg"
+          "The Bhagavad Gita, a part of the Mahabharata, contains teachings on yoga, meditation, and philosophy.",
+      "overlayImage": "assets/india_lvl1_img.jpg"
     },
+    {
+      "question":
+          "What is the name of the ancient Indian script used in the Indus Valley Civilization?",
+      "options": ["Brahmi", "Devanagari", "Harappan Script", "Sanskrit"],
+      "correct": "Harappan Script",
+      "explanation":
+          "The Harappan Script, used in the Indus Valley Civilization, remains undeciphered to this day.",
+      "overlayImage": "assets/india_lvl1_img.jpg"
+    },
+    {
+      "question":
+          "Which emperor was responsible for spreading Buddhism across Asia?",
+      "options": ["Ashoka", "Chandragupta Maurya", "Samudragupta", "Harsha"],
+      "correct": "Ashoka",
+      "explanation":
+          "Emperor Ashoka embraced Buddhism after the Kalinga War and sent missionaries to spread its teachings across Asia.",
+      "overlayImage": "assets/india_lvl1_img.jpg"
+    }
   ];
 
   int currentQuestionIndex = 0;
@@ -132,15 +134,18 @@ class _IndiaQuiz1State extends State<IndiaQuiz1> {
                 ),
                 SizedBox(height: 20),
                 // Main Question
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                  child: Text(
-                    currentQuestion['question'],
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.cinzel(
-                      fontSize: 24,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
+                Container(
+                  color: Colors.black.withOpacity(0.3),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                    child: Text(
+                      currentQuestion['question'],
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.cinzel(
+                        fontSize: 24,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                 ),
@@ -275,53 +280,52 @@ class _IndiaQuiz2State extends State<IndiaQuiz2> {
   // Questions, Options, and Overlay Assets
   final List<Map<String, dynamic>> questions = [
     {
-      "question": "What was the ancient Indiaian name for the underworld?",
-      "options": ["Amenti", "Duat", "Osiris II", "Anubis"],
-      "correct": "Duat",
+      "question": "Which ancient Indian city is known for its Great Bath?",
+      "options": ["Harappa", "Mohenjo-Daro", "Lothal", "Dholavira"],
+      "correct": "Mohenjo-Daro",
       "explanation":
-          "The Duat was the ancient Indiaian underworld, where the souls of the deceased were judged and either rewarded or punished.",
+          "The Great Bath of Mohenjo-Daro is a large public bathing structure, highlighting the advanced urban planning of the Indus Valley Civilization.",
       "overlayImage": "assets/india_lvl2_img.jpg"
     },
     {
-      "question":
-          "Which pharaoh attempted to reform Indiaian religion by introducing monotheism?",
-      "options": ["Tutankhamun", "Akhenaten", "Ramses II", "Cleopatra"],
-      "correct": "Akhenaten",
-      "explanation":
-          "Akhenaten, also known as Amenhotep IV, introduced the worship of the sun disk Aten as the one true god.",
-      "overlayImage": "assets/india_lvl2_img.jpg"
-    },
-    {
-      "question": "What was the name of the ancient Indiaian book of the dead?",
+      "question": "What was the main purpose of the Ashokan Pillars?",
       "options": [
-        "The Book of the Nile",
-        "The Book of Coming Forth by Day",
-        "The Book of the Pyramids",
-        "The Book of Life"
+        "To spread Buddhist teachings",
+        "To mark territorial boundaries",
+        "To honor Hindu gods",
+        "To commemorate wars"
       ],
-      "correct": "The Book of Coming Forth by Day",
+      "correct": "To spread Buddhist teachings",
       "explanation":
-          "The Book of Coming Forth by Day was a collection of spells and rituals and was believed to help the deceased navigate the afterlife.",
+          "The Ashokan Pillars were erected by Emperor Ashoka to spread Buddhist teachings and edicts across his empire.",
       "overlayImage": "assets/india_lvl2_img.jpg"
     },
     {
       "question":
-          "What was the name of the ancient Indiaian capital city during the Old Kingdom?",
-      "options": ["Thebes", "Memphis", "Alexandria", "Giza"],
-      "correct": "Memphis",
+          "Which ancient Indian language is known as the 'language of the gods'?",
+      "options": ["Tamil", "Pali", "Prakrit", "Sanskrit"],
+      "correct": "Sanskrit",
       "explanation":
-          "Memphis was the capital of ancient India during the Old Kingdom and a major religious and cultural center.",
+          "Sanskrit, considered the 'language of the gods,' was used for ancient Indian scriptures and texts such as the Vedas.",
+      "overlayImage": "assets/india_lvl2_img.jpg"
+    },
+    {
+      "question": "What is the Rigveda primarily composed of?",
+      "options": ["Laws", "Epics", "Hymns", "Stories"],
+      "correct": "Hymns",
+      "explanation":
+          "The Rigveda, one of the oldest Indian texts, is primarily a collection of hymns dedicated to various deities.",
       "overlayImage": "assets/india_lvl2_img.jpg"
     },
     {
       "question":
-          "Which pharaoh is known for his extensive building projects, including the Abu Simbel temples?",
-      "options": ["Tutankhamun", "Akhenaten", "Ramses II", "Cleopatra"],
-      "correct": "Ramses II",
+          "What ancient Indian university was renowned for its advanced learning?",
+      "options": ["Takshashila", "Nalanda", "Varanasi", "Kanchipuram"],
+      "correct": "Nalanda",
       "explanation":
-          "Ramses II was a powerful pharaoh who ruled for over 60 years and left behind numerous monuments and temples.",
+          "Nalanda University was a famous center for learning in ancient India, attracting students from all over Asia.",
       "overlayImage": "assets/india_lvl2_img.jpg"
-    },
+    }
   ];
 
   int currentQuestionIndex = 0;
@@ -396,15 +400,18 @@ class _IndiaQuiz2State extends State<IndiaQuiz2> {
                 ),
                 SizedBox(height: 20),
                 // Main Question
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                  child: Text(
-                    currentQuestion['question'],
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.cinzel(
-                      fontSize: 24,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
+                Container(
+                  color: Colors.black.withOpacity(0.3),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                    child: Text(
+                      currentQuestion['question'],
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.cinzel(
+                        fontSize: 24,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                 ),
@@ -539,59 +546,52 @@ class _IndiaQuiz3State extends State<IndiaQuiz3> {
   // Questions, Options, and Overlay Assets
   final List<Map<String, dynamic>> questions = [
     {
-      "question": "What was the purpose of the ancient Indiaian pyramids?",
+      "question": "Which Mauryan ruler authored the book 'Arthashastra'?",
+      "options": ["Bindusara", "Ashoka", "Chandragupta Maurya", "Chanakya"],
+      "correct": "Chanakya",
+      "explanation":
+          "Chanakya, also known as Kautilya, was the advisor to Chandragupta Maurya and authored the 'Arthashastra,' a treatise on governance.",
+      "overlayImage": "assets/india_lvl3_img.jpg"
+    },
+    {
+      "question":
+          "What was the primary export of the Indus Valley Civilization?",
+      "options": ["Cotton textiles", "Spices", "Gold", "Horses"],
+      "correct": "Cotton textiles",
+      "explanation":
+          "The Indus Valley Civilization was known for its high-quality cotton textiles, which were exported to Mesopotamia.",
+      "overlayImage": "assets/india_lvl3_img.jpg"
+    },
+    {
+      "question":
+          "Which Gupta dynasty innovation is considered the precursor to modern mathematics?",
+      "options": ["Geometry", "Decimal system", "Binary code", "Logarithms"],
+      "correct": "Decimal system",
+      "explanation":
+          "The Gupta dynasty mathematicians developed the decimal system and the concept of zero, which revolutionized mathematics.",
+      "overlayImage": "assets/india_lvl3_img.jpg"
+    },
+    {
+      "question": "Who was the author of the ancient Indian play 'Shakuntala'?",
+      "options": ["Bhasa", "Valmiki", "Vyasa", "Kalidasa"],
+      "correct": "Kalidasa",
+      "explanation":
+          "Kalidasa, one of ancient India's greatest poets and playwrights, wrote 'Shakuntala,' a classic Sanskrit play.",
+      "overlayImage": "assets/india_lvl3_img.jpg"
+    },
+    {
+      "question": "What was the primary purpose of the Great Stupa at Sanchi?",
       "options": [
-        "To serve as temples",
-        "To house royal tombs",
-        "To be used as fortresses",
-        "To store grain"
+        "To serve as a palace",
+        "To mark territorial boundaries",
+        "To house Buddhist relics",
+        "To act as a temple"
       ],
-      "correct": "To house royal tombs",
+      "correct": "To house Buddhist relics",
       "explanation":
-          "The pyramids were built as monumental tombs for pharaohs and their consorts.",
-      "overlayImage": "assets/india_lvl2_img.jpg"
-    },
-    {
-      "question":
-          "What is the name of the ancient Indiaian instrument that resembles a flute?",
-      "options": ["Sistra", "Ney", "Daf", "Oud"],
-      "correct": "Ney",
-      "explanation":
-          "The ney is a double-reed woodwind instrument that was popular in ancient India.",
-      "overlayImage": "assets/india_lvl2_img.jpg"
-    },
-    {
-      "question":
-          "Which god was associated with wisdom and writing in ancient India?",
-      "options": ["Thoth", "Horus", "Anubis", "Osiris"],
-      "correct": "Thoth",
-      "explanation":
-          "Thoth was the god of wisdom, magic, and writing, often depicted with the head of an ibis or baboon.",
-      "overlayImage": "assets/india_lvl2_img.jpg"
-    },
-    {
-      "question":
-          "Which famous archaeologist discovered the tomb of Tutankhamun?",
-      "options": [
-        "Howard Carter",
-        "Jean-François Champollion",
-        "Flinders Petrie",
-        "Arthur Evans"
-      ],
-      "correct": "Howard Carter",
-      "explanation":
-          "Howard Carter's discovery of Tutankhamun's intact tomb in 1922 was a major archaeological sensation.",
-      "overlayImage": "assets/india_lvl2_img.jpg"
-    },
-    {
-      "question":
-          "What is the name of the ancient Indiaian symbol that represents eternal life?",
-      "options": ["Ankh", "Scarab", "Eye of Horus", "Djed pillar "],
-      "correct": "Ankh",
-      "explanation":
-          "The ankh, also known as the CRUX ANSATA, is a symbol of life and immortality.",
-      "overlayImage": "assets/india_lvl2_img.jpg"
-    },
+          "The Great Stupa at Sanchi was built to house Buddhist relics and serve as a site for meditation and worship.",
+      "overlayImage": "assets/india_lvl3_img.jpg"
+    }
   ];
 
   int currentQuestionIndex = 0;
@@ -666,15 +666,18 @@ class _IndiaQuiz3State extends State<IndiaQuiz3> {
                 ),
                 SizedBox(height: 20),
                 // Main Question
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                  child: Text(
-                    currentQuestion['question'],
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.cinzel(
-                      fontSize: 24,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
+                Container(
+                  color: Colors.black.withOpacity(0.3),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                    child: Text(
+                      currentQuestion['question'],
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.cinzel(
+                        fontSize: 24,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                 ),
@@ -810,61 +813,63 @@ class _IndiaQuiz4State extends State<IndiaQuiz4> {
   final List<Map<String, dynamic>> questions = [
     {
       "question":
-          "Which festival was celebrated in ancient India to honor the rising of the Nile?",
-      "options": [
-        "Sed Festival",
-        "Feast of Opet",
-        "Feast of Min",
-        "Feast of Wadjet"
-      ],
-      "correct": "Feast of Opet",
+          "What is the name of the ancient Indian board game that inspired chess?",
+      "options": ["Ashtapada", "Pachisi", "Snakes and Ladders", "Chaturanga"],
+      "correct": "Chaturanga",
       "explanation":
-          "The Feast of Opet was a major religious festival that celebrated the annual flooding of the Nile.",
-      "overlayImage": "assets/india_lvl2_img.jpg"
-    },
-    {
-      "question": "What was the role of scribes in ancient Indiaian society?",
-      "options": ["Warriors", "Farmers", "Priests", "Administrators"],
-      "correct": "Administrators",
-      "explanation":
-          "Scribes were highly educated individuals who served as record-keepers, administrators, and advisors to the pharaoh.",
-      "overlayImage": "assets/india_lvl2_img.jpg"
-    },
-    {
-      "question": "What was the significance of the Rosetta Stone?",
-      "options": [
-        "It revealed the secrets of mummification.",
-        "It helped decipher hieroglyphs.",
-        "It was used as a cornerstone for the Great Pyramid.",
-        "It was a map of ancient India."
-      ],
-      "correct": "It helped decipher hieroglyphs.",
-      "explanation":
-          "The Rosetta Stone is a large, broken stone tablet that was discovered in India in 1799. It is inscribed with the same text in three scripts: hieroglyphic, Demotic, and Greek. The stone is a key to understanding Indiaian hieroglyphs and is one of the most famous objects in the British Museum.",
-      "overlayImage": "assets/india_lvl2_img.jpg"
+          "Chaturanga, an ancient Indian strategy game, is considered the precursor to modern chess.",
+      "overlayImage": "assets/india_lvl4_img.jpg"
     },
     {
       "question":
-          "What was the impact of the Hyksos invasion on ancient India?",
+          "Which ancient Indian medical text is considered foundational in Ayurveda?",
       "options": [
-        "It led to a period of cultural decline.",
-        "Introduced new technologies and weapons to India.",
-        "It had little impact on Indiaian society.",
-        "It resulted in the unification of Upper and Lower India."
+        "Rigveda",
+        "Sushruta Samhita",
+        "Charaka Samhita",
+        "Atharvaveda"
       ],
-      "correct": "Introduced new technologies and weapons to India.",
+      "correct": "Charaka Samhita",
       "explanation":
-          "The Hyksos, a group of foreign rulers, brought new technologies like horse-drawn chariots and bronze weaponry to India.",
-      "overlayImage": "assets/india_lvl2_img.jpg"
+          "The 'Charaka Samhita' is one of the foundational texts of Ayurveda, detailing principles of medicine and healing.",
+      "overlayImage": "assets/india_lvl4_img.jpg"
     },
     {
-      "question": "What was the ancient Indiaian name for the city of Thebes?",
-      "options": ["Iunu", "Waset", "Nekhen", "Per-Ramesses"],
-      "correct": "Waset",
+      "question":
+          "Which empire built the Iron Pillar of Delhi that does not rust?",
+      "options": [
+        "Chola Dynasty",
+        "Maurya Empire",
+        "Gupta Empire",
+        "Mughal Empire"
+      ],
+      "correct": "Gupta Empire",
       "explanation":
-          "The city we now call Thebes was known as Waset to the ancient Indiaians. It was a prominent city during the New Kingdom and served as the religious capital, housing the Karnak and Luxor temples dedicated to the god Amun.",
-      "overlayImage": "assets/india_lvl2_img.jpg"
+          "The Iron Pillar of Delhi, built during the Gupta Empire, is a metallurgical marvel that resists rusting.",
+      "overlayImage": "assets/india_lvl4_img.jpg"
     },
+    {
+      "question":
+          "What is the significance of the Ashvamedha ritual in ancient India?",
+      "options": [
+        "It was a horse sacrifice to assert a king's supremacy.",
+        "It was a prayer for rainfall.",
+        "It marked the coronation of a new ruler.",
+        "It was a fertility ceremony."
+      ],
+      "correct": "It was a horse sacrifice to assert a king's supremacy.",
+      "explanation":
+          "The Ashvamedha was an elaborate horse sacrifice ritual performed by ancient Indian kings to assert their dominance over neighboring territories.",
+      "overlayImage": "assets/india_lvl4_img.jpg"
+    },
+    {
+      "question": "Who composed the ancient Indian epic 'Ramayana'?",
+      "options": ["Vyasa", "Valmiki", "Kalidasa", "Bhasa"],
+      "correct": "Valmiki",
+      "explanation":
+          "Valmiki, regarded as the 'Adi Kavi' or first poet, composed the Ramayana, one of the two great Indian epics.",
+      "overlayImage": "assets/india_lvl4_img.jpg"
+    }
   ];
 
   int currentQuestionIndex = 0;
@@ -934,20 +939,23 @@ class _IndiaQuiz4State extends State<IndiaQuiz4> {
                   style: GoogleFonts.cinzel(
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
-                    color: Colors.black,
+                    color: Colors.white,
                   ),
                 ),
                 SizedBox(height: 20),
                 // Main Question
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                  child: Text(
-                    currentQuestion['question'],
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.cinzel(
-                      fontSize: 24,
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold,
+                Container(
+                  color: Colors.black.withOpacity(0.3),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                    child: Text(
+                      currentQuestion['question'],
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.cinzel(
+                        fontSize: 24,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                 ),

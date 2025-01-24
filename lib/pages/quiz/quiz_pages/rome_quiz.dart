@@ -13,51 +13,51 @@ class _RomeQuiz1State extends State<RomeQuiz1> {
   final List<Map<String, dynamic>> questions = [
     {
       "question":
-          "What is the name of the pharaoh who built the Great Pyramid of Giza?",
-      "options": ["Khufu", "Tutankhamun", "Ramesses II", "Akhenaten"],
-      "correct": "Khufu",
+          "What is the name of the Roman amphitheater famous for gladiator fights?",
+      "options": ["Pantheon", "Circus Maximus", "Colosseum", "Forum"],
+      "correct": "Colosseum",
       "explanation":
-          "The Great Pyramid of Giza was built for Pharaoh Khufu. It is one of the Seven Wonders of the Ancient World.",
-      "overlayImage": "assets/rome_lvl2_img.jpg"
+          "The Colosseum, also known as the Flavian Amphitheater, was used for gladiatorial games and could hold up to 50,000 spectators.",
+      "overlayImage": "assets/rome_lvl1_img.jpg"
     },
     {
-      "question": "What is the ancient Romeian writing system called?",
-      "options": ["Cuneiform", "Hieroglyphs", "Runes", "Latin"],
-      "correct": "Hieroglyphs",
+      "question": "Who was the first emperor of Rome?",
+      "options": ["Nero", "Julius Caesar", "Augustus", "Tiberius"],
+      "correct": "Augustus",
       "explanation":
-          "The ancient Romeians used Hieroglyphs as their writing system, which consisted of pictorial symbols.",
-      "overlayImage": "assets/rome_lvl2_img.jpg"
+          "Augustus, also known as Octavian, was the first emperor of Rome and the adopted heir of Julius Caesar.",
+      "overlayImage": "assets/rome_lvl1_img.jpg"
     },
     {
-      "question": "Which river was essential to ancient Romeian civilization?",
-      "options": ["Tigris", "Nile", "Euphrates", "Amazon"],
-      "correct": "Nile",
+      "question": "Which river runs through the city of Rome?",
+      "options": ["Tiber", "Danube", "Rhine", "Po"],
+      "correct": "Tiber",
       "explanation":
-          "The Nile River was essential for agriculture, transportation, and sustaining life in ancient Rome.",
-      "overlayImage": "assets/rome_lvl2_img.jpg"
-    },
-    {
-      "question": "What was the purpose of mummification in ancient Rome?",
-      "options": [
-        "To preserve the body for an afterlife",
-        "To prevent disease",
-        "To honor the deceased",
-        "To prepare the body for burial"
-      ],
-      "correct": "To preserve the body for an afterlife",
-      "explanation":
-          "Ancient Romeians believed that the preservation of the body was essential for the soul to continue its journey in the afterlife.",
-      "overlayImage": "assets/rome_lvl2_img.jpg"
+          "The Tiber River was crucial to the founding and development of Rome and remains an important geographical feature of the city.",
+      "overlayImage": "assets/rome_lvl1_img.jpg"
     },
     {
       "question":
-          "What was the primary material used to make the ancient Romeian writing tool, the reed pen?",
-      "options": ["Wood", "Metal", "Papyrus", "Stone"],
-      "correct": "Papyrus",
+          "What material did the Romans invent, allowing them to build lasting structures?",
+      "options": ["Granite", "Marble", "Limestone", "Concrete"],
+      "correct": "Concrete",
       "explanation":
-          "Papyrus reeds were used to make a type of paper and also to create pens for writing.",
-      "overlayImage": "assets/rome_lvl2_img.jpg"
+          "Roman concrete, also known as opus caementicium, was durable and allowed for the construction of iconic buildings like the Colosseum and aqueducts.",
+      "overlayImage": "assets/rome_lvl1_img.jpg"
     },
+    {
+      "question": "What were Roman aqueducts used for?",
+      "options": [
+        "Transporting water",
+        "Military roads",
+        "Defensive walls",
+        "Storing grain"
+      ],
+      "correct": "Transporting water",
+      "explanation":
+          "Roman aqueducts were engineering marvels that brought fresh water to cities, enabling urban growth and public baths.",
+      "overlayImage": "assets/rome_lvl1_img.jpg"
+    }
   ];
 
   int currentQuestionIndex = 0;
@@ -127,20 +127,23 @@ class _RomeQuiz1State extends State<RomeQuiz1> {
                   style: GoogleFonts.cinzel(
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
-                    color: Colors.white,
+                    color: Colors.black,
                   ),
                 ),
                 SizedBox(height: 20),
                 // Main Question
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                  child: Text(
-                    currentQuestion['question'],
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.cinzel(
-                      fontSize: 24,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
+                Container(
+                  color: Colors.black.withOpacity(0.3),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                    child: Text(
+                      currentQuestion['question'],
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.cinzel(
+                        fontSize: 24,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                 ),
@@ -275,53 +278,52 @@ class _RomeQuiz2State extends State<RomeQuiz2> {
   // Questions, Options, and Overlay Assets
   final List<Map<String, dynamic>> questions = [
     {
-      "question": "What was the ancient Romeian name for the underworld?",
-      "options": ["Amenti", "Duat", "Osiris II", "Anubis"],
-      "correct": "Duat",
-      "explanation":
-          "The Duat was the ancient Romeian underworld, where the souls of the deceased were judged and either rewarded or punished.",
-      "overlayImage": "assets/rome_lvl2_img.jpg"
-    },
-    {
-      "question":
-          "Which pharaoh attempted to reform Romeian religion by introducing monotheism?",
-      "options": ["Tutankhamun", "Akhenaten", "Ramses II", "Cleopatra"],
-      "correct": "Akhenaten",
-      "explanation":
-          "Akhenaten, also known as Amenhotep IV, introduced the worship of the sun disk Aten as the one true god.",
-      "overlayImage": "assets/rome_lvl2_img.jpg"
-    },
-    {
-      "question": "What was the name of the ancient Romeian book of the dead?",
+      "question": "What was the Roman Forum primarily used for?",
       "options": [
-        "The Book of the Nile",
-        "The Book of Coming Forth by Day",
-        "The Book of the Pyramids",
-        "The Book of Life"
+        "Religious ceremonies only",
+        "Military training",
+        "Emperor's residence",
+        "Markets and public gatherings"
       ],
-      "correct": "The Book of Coming Forth by Day",
+      "correct": "Markets and public gatherings",
       "explanation":
-          "The Book of Coming Forth by Day was a collection of spells and rituals and was believed to help the deceased navigate the afterlife.",
+          "The Roman Forum was the heart of ancient Rome, serving as a marketplace, public square, and center for civic activities.",
+      "overlayImage": "assets/rome_lvl2_img.jpg"
+    },
+    {
+      "question": "What was the Roman name for modern-day France?",
+      "options": ["Hispania", "Gallia", "Britannia", "Germania"],
+      "correct": "Gallia",
+      "explanation":
+          "Gallia (Gaul) was the Roman name for the region that roughly corresponds to modern-day France.",
       "overlayImage": "assets/rome_lvl2_img.jpg"
     },
     {
       "question":
-          "What was the name of the ancient Romeian capital city during the Old Kingdom?",
-      "options": ["Thebes", "Memphis", "Alexandria", "Giza"],
-      "correct": "Memphis",
+          "Who was Rome's famous Carthaginian adversary during the Punic Wars?",
+      "options": ["Cicero", "Scipio", "Marcus Aurelius", "Hannibal"],
+      "correct": "Hannibal",
       "explanation":
-          "Memphis was the capital of ancient Rome during the Old Kingdom and a major religious and cultural center.",
+          "Hannibal, a brilliant military commander from Carthage, famously crossed the Alps with war elephants to attack Rome.",
+      "overlayImage": "assets/rome_lvl2_img.jpg"
+    },
+    {
+      "question": "What were Roman public baths called?",
+      "options": ["Thermae", "Aqueducts", "Cloacae", "Latrines"],
+      "correct": "Thermae",
+      "explanation":
+          "Thermae were large public bathing complexes in Roman cities, offering hot, warm, and cold baths.",
       "overlayImage": "assets/rome_lvl2_img.jpg"
     },
     {
       "question":
-          "Which pharaoh is known for his extensive building projects, including the Abu Simbel temples?",
-      "options": ["Tutankhamun", "Akhenaten", "Ramses II", "Cleopatra"],
-      "correct": "Ramses II",
+          "What type of government did Rome have before becoming an empire?",
+      "options": ["Monarchy", "Republic", "Democracy", "Oligarchy"],
+      "correct": "Republic",
       "explanation":
-          "Ramses II was a powerful pharaoh who ruled for over 60 years and left behind numerous monuments and temples.",
+          "Before transitioning to an empire, Rome was a republic where power was held by elected officials and a Senate.",
       "overlayImage": "assets/rome_lvl2_img.jpg"
-    },
+    }
   ];
 
   int currentQuestionIndex = 0;
@@ -396,15 +398,18 @@ class _RomeQuiz2State extends State<RomeQuiz2> {
                 ),
                 SizedBox(height: 20),
                 // Main Question
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                  child: Text(
-                    currentQuestion['question'],
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.cinzel(
-                      fontSize: 24,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
+                Container(
+                  color: Colors.black.withOpacity(0.3),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                    child: Text(
+                      currentQuestion['question'],
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.cinzel(
+                        fontSize: 24,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                 ),
@@ -539,59 +544,63 @@ class _RomeQuiz3State extends State<RomeQuiz3> {
   // Questions, Options, and Overlay Assets
   final List<Map<String, dynamic>> questions = [
     {
-      "question": "What was the purpose of the ancient Romeian pyramids?",
+      "question":
+          "What was the purpose of the Roman instrument called a 'cornu'?",
       "options": [
-        "To serve as temples",
-        "To house royal tombs",
-        "To be used as fortresses",
-        "To store grain"
+        "Measuring time",
+        "Religious ceremonies",
+        "Military signaling",
+        "Entertainment"
       ],
-      "correct": "To house royal tombs",
+      "correct": "Military signaling",
       "explanation":
-          "The pyramids were built as monumental tombs for pharaohs and their consorts.",
-      "overlayImage": "assets/rome_lvl2_img.jpg"
+          "The cornu was a brass instrument used by Roman soldiers to signal commands during battles and marches.",
+      "overlayImage": "assets/rome_lvl3_img.jpg"
     },
     {
       "question":
-          "What is the name of the ancient Romeian instrument that resembles a flute?",
-      "options": ["Sistra", "Ney", "Daf", "Oud"],
-      "correct": "Ney",
+          "Which Roman emperor famously declared Christianity the official religion of the empire?",
+      "options": ["Constantine I", "Nero", "Diocletian", "Hadrian"],
+      "correct": "Constantine I",
       "explanation":
-          "The ney is a double-reed woodwind instrument that was popular in ancient Rome.",
-      "overlayImage": "assets/rome_lvl2_img.jpg"
+          "Constantine I, through the Edict of Milan and subsequent actions, established Christianity as a dominant religion in the empire.",
+      "overlayImage": "assets/rome_lvl3_img.jpg"
     },
     {
-      "question":
-          "Which god was associated with wisdom and writing in ancient Rome?",
-      "options": ["Thoth", "Horus", "Anubis", "Osiris"],
-      "correct": "Thoth",
-      "explanation":
-          "Thoth was the god of wisdom, magic, and writing, often depicted with the head of an ibis or baboon.",
-      "overlayImage": "assets/rome_lvl2_img.jpg"
-    },
-    {
-      "question":
-          "Which famous archaeologist discovered the tomb of Tutankhamun?",
+      "question": "What was the purpose of the Cloaca Maxima in Rome?",
       "options": [
-        "Howard Carter",
-        "Jean-François Champollion",
-        "Flinders Petrie",
-        "Arthur Evans"
+        "Drainage and sewage system",
+        "Temple to the gods",
+        "Marketplace",
+        "Road construction"
       ],
-      "correct": "Howard Carter",
+      "correct": "Drainage and sewage system",
       "explanation":
-          "Howard Carter's discovery of Tutankhamun's intact tomb in 1922 was a major archaeological sensation.",
-      "overlayImage": "assets/rome_lvl2_img.jpg"
+          "The Cloaca Maxima was one of the world's earliest sewer systems, built to drain the marshlands of Rome.",
+      "overlayImage": "assets/rome_lvl3_img.jpg"
     },
     {
       "question":
-          "What is the name of the ancient Romeian symbol that represents eternal life?",
-      "options": ["Ankh", "Scarab", "Eye of Horus", "Djed pillar "],
-      "correct": "Ankh",
+          "Which Roman goddess was the protector of the hearth and home?",
+      "options": ["Minerva", "Juno", "Vesta", "Venus"],
+      "correct": "Vesta",
       "explanation":
-          "The ankh, also known as the CRUX ANSATA, is a symbol of life and immortality.",
-      "overlayImage": "assets/rome_lvl2_img.jpg"
+          "Vesta was the goddess of the hearth, and her temple in Rome contained the sacred fire tended by the Vestal Virgins.",
+      "overlayImage": "assets/rome_lvl3_img.jpg"
     },
+    {
+      "question": "What was the main purpose of a Roman 'triumph'?",
+      "options": [
+        "To celebrate military victories",
+        "To honor the gods",
+        "To crown a new emperor",
+        "To open a new Senate session"
+      ],
+      "correct": "To celebrate military victories",
+      "explanation":
+          "A triumph was a grand parade held in Rome to celebrate a military commander's victory and showcase spoils of war.",
+      "overlayImage": "assets/rome_lvl3_img.jpg"
+    }
   ];
 
   int currentQuestionIndex = 0;
@@ -666,15 +675,18 @@ class _RomeQuiz3State extends State<RomeQuiz3> {
                 ),
                 SizedBox(height: 20),
                 // Main Question
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                  child: Text(
-                    currentQuestion['question'],
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.cinzel(
-                      fontSize: 24,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
+                Container(
+                  color: Colors.black.withOpacity(0.3),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                    child: Text(
+                      currentQuestion['question'],
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.cinzel(
+                        fontSize: 24,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                 ),
@@ -810,60 +822,66 @@ class _RomeQuiz4State extends State<RomeQuiz4> {
   final List<Map<String, dynamic>> questions = [
     {
       "question":
-          "Which festival was celebrated in ancient Rome to honor the rising of the Nile?",
+          "What was the significance of the Roman milestone 'Milliarium Aureum'?",
       "options": [
-        "Sed Festival",
-        "Feast of Opet",
-        "Feast of Min",
-        "Feast of Wadjet"
+        "It marked the center of the Roman road network.",
+        "It was a symbol of Roman military victories.",
+        "It marked the empire's borders.",
+        "It was used for religious offerings."
       ],
-      "correct": "Feast of Opet",
+      "correct": "It marked the center of the Roman road network.",
       "explanation":
-          "The Feast of Opet was a major religious festival that celebrated the annual flooding of the Nile.",
-      "overlayImage": "assets/rome_lvl2_img.jpg"
+          "The Milliarium Aureum (Golden Milestone) was placed in the Roman Forum and was considered the starting point of all Roman roads.",
+      "overlayImage": "assets/rome_lvl4_img.jpg"
     },
     {
-      "question": "What was the role of scribes in ancient Romeian society?",
-      "options": ["Warriors", "Farmers", "Priests", "Administrators"],
-      "correct": "Administrators",
-      "explanation":
-          "Scribes were highly educated individuals who served as record-keepers, administrators, and advisors to the pharaoh.",
-      "overlayImage": "assets/rome_lvl2_img.jpg"
-    },
-    {
-      "question": "What was the significance of the Rosetta Stone?",
+      "question": "What was the purpose of the Roman structure 'Hypocaust'?",
       "options": [
-        "It revealed the secrets of mummification.",
-        "It helped decipher hieroglyphs.",
-        "It was used as a cornerstone for the Great Pyramid.",
-        "It was a map of ancient Rome."
+        "Underground storage",
+        "Defensive walls",
+        "Heating bathhouses",
+        "Aqueduct support"
       ],
-      "correct": "It helped decipher hieroglyphs.",
+      "correct": "Heating bathhouses",
       "explanation":
-          "The Rosetta Stone is a large, broken stone tablet that was discovered in Rome in 1799. It is inscribed with the same text in three scripts: hieroglyphic, Demotic, and Greek. The stone is a key to understanding Romeian hieroglyphs and is one of the most famous objects in the British Museum.",
-      "overlayImage": "assets/rome_lvl2_img.jpg"
+          "The hypocaust was an innovative system used to heat Roman bathhouses and homes through a network of underfloor heating.",
+      "overlayImage": "assets/rome_lvl4_img.jpg"
     },
     {
-      "question": "What was the impact of the Hyksos invasion on ancient Rome?",
+      "question": "What was unusual about the reign of Emperor Caligula?",
       "options": [
-        "It led to a period of cultural decline.",
-        "Introduced new technologies and weapons to Rome.",
-        "It had little impact on Romeian society.",
-        "It resulted in the unification of Upper and Lower Rome."
+        "He removed the Senate entirely.",
+        "He banned all public games.",
+        "He declared war on Greece.",
+        "He attempted to make his horse a consul."
       ],
-      "correct": "Introduced new technologies and weapons to Rome.",
+      "correct": "He attempted to make his horse a consul.",
       "explanation":
-          "The Hyksos, a group of foreign rulers, brought new technologies like horse-drawn chariots and bronze weaponry to Rome.",
-      "overlayImage": "assets/rome_lvl2_img.jpg"
+          "Emperor Caligula was infamous for his eccentric and erratic behavior, including his reported intention to appoint his horse Incitatus as consul.",
+      "overlayImage": "assets/rome_lvl4_img.jpg"
     },
     {
-      "question": "What was the ancient Romeian name for the city of Thebes?",
-      "options": ["Iunu", "Waset", "Nekhen", "Per-Ramesses"],
-      "correct": "Waset",
+      "question": "What was the primary function of the Roman 'Tabularium'?",
+      "options": [
+        "To mint coins",
+        "To house the Senate",
+        "To store official records",
+        "To act as a public library"
+      ],
+      "correct": "To store official records",
       "explanation":
-          "The city we now call Thebes was known as Waset to the ancient Romeians. It was a prominent city during the New Kingdom and served as the religious capital, housing the Karnak and Luxor temples dedicated to the god Amun.",
-      "overlayImage": "assets/rome_lvl2_img.jpg"
+          "The Tabularium, located in the Roman Forum, was the official records office of ancient Rome, preserving important legal and administrative documents.",
+      "overlayImage": "assets/rome_lvl4_img.jpg"
     },
+    {
+      "question":
+          "Which Roman emperor was responsible for building the Pantheon we see today?",
+      "options": ["Hadrian", "Trajan", "Augustus", "Nero"],
+      "correct": "Hadrian",
+      "explanation":
+          "Emperor Hadrian rebuilt the Pantheon in its current form around 126 AD, with its iconic domed roof and oculus.",
+      "overlayImage": "assets/rome_lvl4_img.jpg"
+    }
   ];
 
   int currentQuestionIndex = 0;
@@ -933,20 +951,23 @@ class _RomeQuiz4State extends State<RomeQuiz4> {
                   style: GoogleFonts.cinzel(
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
-                    color: Colors.black,
+                    color: Colors.white,
                   ),
                 ),
                 SizedBox(height: 20),
                 // Main Question
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                  child: Text(
-                    currentQuestion['question'],
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.cinzel(
-                      fontSize: 24,
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold,
+                Container(
+                  color: Colors.black.withOpacity(0.3),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                    child: Text(
+                      currentQuestion['question'],
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.cinzel(
+                        fontSize: 24,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                 ),
