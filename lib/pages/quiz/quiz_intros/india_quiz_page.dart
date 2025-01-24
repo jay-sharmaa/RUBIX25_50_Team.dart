@@ -2,12 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:rubix_time_machine/pages/quiz/quiz_lvl_intro_outro/india_lvl_intro.dart';
 
-void main() {
-  runApp(MaterialApp(
-    home: IndiaTriviaPage(),
-  ));
-}
-
 class IndiaTriviaPage extends StatefulWidget {
   @override
   _IndiaTriviaPageState createState() => _IndiaTriviaPageState();

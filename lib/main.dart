@@ -5,11 +5,6 @@ import 'package:rubix_time_machine/pages/forum_page.dart';
 import 'package:rubix_time_machine/pages/home.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:rubix_time_machine/pages/timeline_page.dart';
-import 'package:rubix_time_machine/pages/quiz/quiz_intros/egypt_quiz_page.dart';
-import 'package:rubix_time_machine/pages/quiz/quiz_intros/greece_quiz_page.dart';
-import 'package:rubix_time_machine/pages/quiz/quiz_intros/rome_quiz_page.dart';
-import 'package:rubix_time_machine/pages/quiz/quiz_intros/india_quiz_page.dart';
-import 'pages/timeline_page.dart';
 import 'utils/colors.dart';
 
 void main() async {

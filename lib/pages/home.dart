@@ -5,13 +5,11 @@ import 'package:google_mlkit_text_recognition/google_mlkit_text_recognition.dart
 import 'package:image_picker/image_picker.dart';
 import 'package:rubix_time_machine/main.dart';
 import 'package:rubix_time_machine/pages/info_read_page.dart';
-import 'package:rubix_time_machine/pages/quiz_intros/egypt_quiz_page.dart';
-import 'package:rubix_time_machine/pages/quiz_intros/greece_quiz_page.dart';
-import 'package:rubix_time_machine/pages/quiz_intros/india_quiz_page.dart';
-import 'package:rubix_time_machine/pages/quiz_intros/rome_quiz_page.dart';
-import 'package:rubix_time_machine/pages/timeline_page.dart';
+import 'package:rubix_time_machine/pages/quiz/quiz_intros/egypt_quiz_page.dart';
+import 'package:rubix_time_machine/pages/quiz/quiz_intros/greece_quiz_page.dart';
+import 'package:rubix_time_machine/pages/quiz/quiz_intros/india_quiz_page.dart';
+import 'package:rubix_time_machine/pages/quiz/quiz_intros/rome_quiz_page.dart';
 import 'package:rubix_time_machine/pages/workflow.dart';
-import 'package:rubix_time_machine/utils/colors.dart';
 import 'package:rubix_time_machine/utils/timeline_data.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../utils/appbar.dart';
@@ -342,20 +340,20 @@ class _HomeState extends ConsumerState<Home> {
             top: 140,
             left: 100,
             child: GestureDetector(
-              onTap: (){
+              onTap: () {
                 print(name);
-                Navigator.push(context, MaterialPageRoute(builder: (context){
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
                   print(name);
-                  if(name == 'assets/ancient_greece_quiz_img.jpg'){
+                  if (name == 'assets/ancient_greece_quiz_img.jpg') {
                     return GreeceTriviaPage();
                   }
-                  if(name == 'assets/ancient_india_quiz_img.jpg'){
+                  if (name == 'assets/ancient_india_quiz_img.jpg') {
                     return IndiaTriviaPage();
                   }
-                  if(name == 'assets/ancient_rome_quiz_img.jpeg'){
+                  if (name == 'assets/ancient_rome_quiz_img.jpeg') {
                     return RomeTriviaPage();
                   }
-                  if(name == 'assets/ancient_egypt_quiz_img.jpg'){
+                  if (name == 'assets/ancient_egypt_quiz_img.jpg') {
                     return EgyptTriviaPage();
                   }
                   return PlaceHolder();
