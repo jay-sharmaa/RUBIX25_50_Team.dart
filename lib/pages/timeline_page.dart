@@ -44,7 +44,7 @@ class _MyWidgetState extends ConsumerState<TimelinePage> {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             SizedBox(
-              height: MediaQuery.of(context).size.height / 1.22,
+              height: MediaQuery.of(context).size.height / 1.52,
               child: SafeArea(
                 child: TimelineTheme(
                   data: TimelineThemeData(
@@ -89,9 +89,7 @@ void lauchUri(Uri _uri) async {
     if (await canLaunchUrl(_uri)) {
       await launchUrl(_uri);
     }
-  } catch (e) {
-    
-  }
+  } catch (e) {}
 }
 
 Widget image_text(String assets, String text) {
@@ -107,17 +105,24 @@ Widget image_text(String assets, String text) {
               )),
           const Icon(Icons.fullscreen)
         ]),
-        Text(text, style: GoogleFonts.cinzel(fontSize: 18, fontWeight: FontWeight.bold, color: const Color(0xA00000EE)))
+        Text(text,
+            style: GoogleFonts.cinzel(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: const Color(0xA00000EE)))
       ],
     );
   } else {
     return Column(
       children: [
-        Text(text, style: GoogleFonts.cinzel(fontSize: 18, fontWeight: FontWeight.bold, color: const Color(0xA00000EE))),
-        Text(
-          assets,
-          style: GoogleFonts.cinzel(fontSize: 14, fontWeight: FontWeight.bold)
-        )
+        Text(text,
+            style: GoogleFonts.cinzel(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: const Color(0xA00000EE))),
+        Text(assets,
+            style:
+                GoogleFonts.cinzel(fontSize: 14, fontWeight: FontWeight.bold))
       ],
     );
   }
@@ -226,15 +231,13 @@ class _AnimatedGradientContainerState extends State<AnimatedGradientContainer>
             child: Material(
               type: MaterialType.transparency,
               child: Center(
-                  child: GestureDetector(
-                    onTap: (){
-
-                    },
-                    child: const Text(
-                      "Project AR",
-                      style: TextStyle(color: Colors.white, fontSize: 18),
-                    ),
+                child: GestureDetector(
+                  onTap: () {},
+                  child: const Text(
+                    "Project AR",
+                    style: TextStyle(color: Colors.white, fontSize: 18),
                   ),
+                ),
               ),
             ),
           );

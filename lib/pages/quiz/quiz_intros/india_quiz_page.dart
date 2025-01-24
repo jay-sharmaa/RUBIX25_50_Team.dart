@@ -142,6 +142,7 @@ class _IndiaTriviaPageState extends State<IndiaTriviaPage> {
                           "- Rise from a humble learner to becoming the Master Scholar in the great halls of history!",
                           style: GoogleFonts.lato(
                             fontSize: 16,
+                            color: Colors.black,
                           ),
                         ),
                       ],

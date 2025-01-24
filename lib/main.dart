@@ -83,7 +83,6 @@ class _MyAppState extends ConsumerState<MyApp> {
                   label: "Discussion", icon: Icon(Icons.chat)),
               BottomNavigationBarItem(
                   label: "History", icon: Icon(Icons.timeline)),
-              BottomNavigationBarItem(label: "Trivia", icon: Icon(Icons.quiz)),
             ]),
       ),
     );
