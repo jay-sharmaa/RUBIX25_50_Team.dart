@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:rubix_time_machine/main.dart';
 import 'package:rubix_time_machine/utils/appbar.dart';
 import 'package:rubix_time_machine/utils/timeline_data.dart';
@@ -52,7 +53,7 @@ class _MyWidgetState extends ConsumerState<TimelinePage> {
                   ),
                   child: Timeline.tileBuilder(
                     builder: TimelineTileBuilder.fromStyle(
-                      itemExtent: 300,
+                      itemExtent: 320,
                       contentsAlign: ContentsAlign.reverse,
                       contentsBuilder: (context, index) => Padding(
                         padding: const EdgeInsets.all(24.0),
@@ -84,13 +85,12 @@ class _MyWidgetState extends ConsumerState<TimelinePage> {
 }
 
 void lauchUri(Uri _uri) async {
-  print(_uri);
   try {
     if (await canLaunchUrl(_uri)) {
       await launchUrl(_uri);
     }
   } catch (e) {
-    print(e);
+    
   }
 }
 
@@ -107,15 +107,16 @@ Widget image_text(String assets, String text) {
               )),
           const Icon(Icons.fullscreen)
         ]),
-        Text(text, style: const TextStyle(color: Color(0xA00000EE)))
+        Text(text, style: GoogleFonts.cinzel(fontSize: 18, fontWeight: FontWeight.bold, color: const Color(0xA00000EE)))
       ],
     );
   } else {
     return Column(
       children: [
-        Text(text, style: const TextStyle(color: Color(0xA00000EE))),
+        Text(text, style: GoogleFonts.cinzel(fontSize: 18, fontWeight: FontWeight.bold, color: const Color(0xA00000EE))),
         Text(
           assets,
+          style: GoogleFonts.cinzel(fontSize: 14, fontWeight: FontWeight.bold)
         )
       ],
     );
@@ -222,13 +223,19 @@ class _AnimatedGradientContainerState extends State<AnimatedGradientContainer>
                 ],
               ),
             ),
-            child: const Material(
+            child: Material(
               type: MaterialType.transparency,
               child: Center(
-                  child: Text(
-                "Project AR",
-                style: TextStyle(color: Colors.white, fontSize: 18),
-              )),
+                  child: GestureDetector(
+                    onTap: (){
+
+                    },
+                    child: const Text(
+                      "Project AR",
+                      style: TextStyle(color: Colors.white, fontSize: 18),
+                    ),
+                  ),
+              ),
             ),
           );
         },

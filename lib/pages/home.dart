@@ -5,6 +5,10 @@ import 'package:google_mlkit_text_recognition/google_mlkit_text_recognition.dart
 import 'package:image_picker/image_picker.dart';
 import 'package:rubix_time_machine/main.dart';
 import 'package:rubix_time_machine/pages/info_read_page.dart';
+import 'package:rubix_time_machine/pages/quiz_intros/egypt_quiz_page.dart';
+import 'package:rubix_time_machine/pages/quiz_intros/greece_quiz_page.dart';
+import 'package:rubix_time_machine/pages/quiz_intros/india_quiz_page.dart';
+import 'package:rubix_time_machine/pages/quiz_intros/rome_quiz_page.dart';
 import 'package:rubix_time_machine/pages/timeline_page.dart';
 import 'package:rubix_time_machine/pages/workflow.dart';
 import 'package:rubix_time_machine/utils/colors.dart';
@@ -229,7 +233,7 @@ class _HomeState extends ConsumerState<Home> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: EdgeInsets.all(8.0),
                   child: Icon(
                     Icons.settings,
                     size: 32,
@@ -337,16 +341,37 @@ class _HomeState extends ConsumerState<Home> {
           Positioned(
             top: 140,
             left: 100,
-            child: Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12),
-                color: theme.colorScheme.primary.withOpacity(.75),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(2.0),
-                child: const Text(
-                  "Take Quiz",
-                  style: TextStyle(fontSize: 32, color: Colors.black),
+            child: GestureDetector(
+              onTap: (){
+                print(name);
+                Navigator.push(context, MaterialPageRoute(builder: (context){
+                  print(name);
+                  if(name == 'assets/ancient_greece_quiz_img.jpg'){
+                    return GreeceTriviaPage();
+                  }
+                  if(name == 'assets/ancient_india_quiz_img.jpg'){
+                    return IndiaTriviaPage();
+                  }
+                  if(name == 'assets/ancient_rome_quiz_img.jpeg'){
+                    return RomeTriviaPage();
+                  }
+                  if(name == 'assets/ancient_egypt_quiz_img.jpg'){
+                    return EgyptTriviaPage();
+                  }
+                  return PlaceHolder();
+                }));
+              },
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(12),
+                  color: theme.colorScheme.primary.withOpacity(.75),
+                ),
+                child: const Padding(
+                  padding: const EdgeInsets.all(2.0),
+                  child: const Text(
+                    "Take Quiz",
+                    style: TextStyle(fontSize: 32, color: Colors.black),
+                  ),
                 ),
               ),
             ),

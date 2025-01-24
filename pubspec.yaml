@@ -119,6 +119,11 @@ flutter:
     - assets/greece.png
     - assets/egypt_thumbnail.png
     - assets/youtube_png.webp
+    - assets/socrates.png
+    - assets/archemedes.png
+    - assets/alexander.png
+    - assets/pythagoras.png
+    - assets/herodotus.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
