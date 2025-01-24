@@ -2,12 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:rubix_time_machine/pages/quiz/quiz_lvl_intro_outro/greece_lvl_intro.dart';
 
-void main() {
-  runApp(MaterialApp(
-    home: GreeceTriviaPage(),
-  ));
-}
-
 class GreeceTriviaPage extends StatefulWidget {
   @override
   _GreeceTriviaPageState createState() => _GreeceTriviaPageState();
